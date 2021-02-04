@@ -1,0 +1,152 @@
+.middle {
+    position: absolute;
+    left: 23.7%;
+    width: 46.3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -1rem;
+}
+
+.dummyone {
+    left: 2%;
+    width: 19vw;
+    height: 85vh;
+    background-color: #FDFFFC;
+    position: fixed;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px -2px rgba(0,0,0,.2);
+}
+
+.dummytwo {
+    right: 2%;
+    width: 25vw;
+    height: 85vh;
+    background-color: #FDFFFC;
+    position: fixed;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px -2px rgba(0,0,0,.2);
+}
+
+@media (max-width: 850px) {
+    .OtherUser {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+        padding-top: 4rem;
+    }
+
+    .dummytwo {
+        display: none;
+        width: 0;
+        height: 0;
+        position: relative;
+        
+    }
+
+    .dummyone {
+        position: relative;
+        width: 95%;
+        height: 7rem;
+        top: 0%;
+        left: 0%;
+    }
+
+    .middle {
+        position: relative;
+        width: 95%;
+        top: 0%;
+        left: 0%;
+        padding-bottom: 1rem;
+    }
+}
+
+@media (max-width: 710px) {
+    .dummyone {
+        position: relative;
+        width: 95%;
+        height: 14rem;
+        top: 0%;
+        left: 0%;
+    }
+}
+
+/* DARK MODE CLASSES */
+
+.middleDark {
+    position: absolute;
+    left: 23.7%;
+    width: 46.3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -1rem;
+}
+
+.dummyoneDark {
+    left: 2%;
+    width: 19vw;
+    height: 85vh;
+    background-color: #292547;
+    position: fixed;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px -2px rgba(0,0,0,.2);
+}
+
+.dummytwoDark {
+    right: 2%;
+    width: 25vw;
+    height: 85vh;
+    background-color: #292547;
+    position: fixed;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px -2px rgba(0,0,0,.2);
+}
+
+@media (max-width: 850px) {
+    .OtherUserDark {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+        padding-top: 4rem;
+    }
+
+    .dummytwoDark {
+        display: none;
+        width: 0;
+        height: 0;
+        position: relative;
+        
+    }
+
+    .dummyoneDark {
+        position: relative;
+        width: 95%;
+        height: 7rem;
+        top: 0%;
+        left: 0%;
+    }
+
+    .middleDark {
+        position: relative;
+        width: 95%;
+        top: 0%;
+        left: 0%;
+        padding-bottom: 1rem;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 710px) {
+    .dummyoneDark {
+        position: relative;
+        width: 95%;
+        height: 14rem;
+        top: 0%;
+        left: 0%;
+    }
+}

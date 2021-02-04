@@ -1,0 +1,120 @@
+.CreateComment {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: solid 1px #DEDDDC;
+    border-left: none;
+    border-right: none;
+    transition: all .3s;
+}
+
+.CreateComment textarea {
+    height: 2.5rem;
+    border-radius: 5px;
+    border: none;
+    transition: all .3s;
+}
+
+.CreateComment textarea:hover {
+    background-color: #e5e4eb;
+    transition: all .3s;
+}
+
+.CreateComment textarea:focus {
+    box-shadow: 0px 0px 10px -2px rgba(0,0,0,.2);
+    background-color: #fff;
+}
+
+
+.CreateComment label {
+    display: none;
+}
+
+
+.buttonArea {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CreateComment button {
+    height: 2.5rem;
+    background-color: #DE9D83;
+    color: #fff;
+    box-sizing: border-box;
+    margin: 0;
+    margin-right: 12px;
+    margin-left: -10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.CreateComment button:hover {
+    background-color: #E6A287;
+    transition: all .3s;
+}
+
+/* DARK MODE CLASSES */
+
+.CreateCommentDark {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: solid 1px #211e3b;
+    border-left: none;
+    border-right: none;
+    transition: all .3s;
+}
+
+.CreateCommentDark textarea {
+    height: 2.5rem;
+    border-radius: 5px;
+    border: none;
+    transition: all .3s;
+    background-color: #322d57;
+}
+
+.CreateCommentDark textarea::placeholder {
+    color: #BFBFBF;
+}
+
+.CreateCommentDark textarea:hover {
+    background-color: #322d57;
+    transition: all .3s;
+}
+
+.CreateCommentDark textarea:focus {
+    box-shadow: 0px 0px 10px -2px rgba(0,0,0,.2);
+    background-color: #fff;
+}
+
+
+.CreateCommentDark label {
+    display: none;
+}
+
+
+.buttonAreaDark {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CreateCommentDark button {
+    height: 2.5rem;
+    background-color: #DE9D83;
+    color: #fff;
+    box-sizing: border-box;
+    margin: 0;
+    margin-right: 12px;
+    margin-left: -10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.CreateCommentDark button:hover {
+    background-color: #E6A287;
+    transition: all .3s;
+}

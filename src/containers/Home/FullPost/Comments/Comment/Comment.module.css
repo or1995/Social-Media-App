@@ -1,0 +1,388 @@
+.Comment {
+    background-color: #FDFFFC;
+    box-sizing: border-box;
+    border-bottom: solid 1px #DEDDDC;
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.likeArea {
+    background-color: #FDFFFC;
+    box-sizing: border-box;
+    width: 100%;
+    height: 3rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.likes {
+    margin: 0;
+    font-size: 12px;
+}
+
+.userArea {
+    box-sizing: border-box;
+    padding: 7px;
+    margin: 0;
+    padding-bottom: 2px;
+    padding-left: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.profileImg {
+    box-sizing: border-box;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    border: solid 1px #E6E4E3;
+    margin-right: .2rem;
+    margin-left: 5px;
+    transition: all .3s;
+}
+
+.profileImg:hover {
+    border: solid 3px #E6E4E3;
+    transition: all .3s;
+}
+
+.User {
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-family: 'Manrope', sans-serif;
+    font-weight: normal;
+    margin: 0;
+}
+
+.User a {
+    text-decoration: none;
+    color:#5C5C5C;
+    padding-left: 0.5rem;
+}
+
+.User a:hover {
+    color: #011627;
+    transition: all .3s;
+}
+
+.content {
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px 30px;
+    margin: 0;
+    box-sizing: border-box;
+    color:#5C5C5C;
+    font-weight: normal;
+}
+
+.likes {
+    color: #5C5C5C;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    margin-left: 1rem;
+}
+
+.likesUp {
+    color: #9081FF;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    margin-left: 1rem;
+}
+
+.likesDown {
+    color: #ff8181;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    margin-left: 1rem;
+}
+
+.likeButton {
+    border: none;
+    background-color: transparent;
+    color: #878686;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+    width: 4rem;
+    height: 100%;
+    transition: all .3s;
+}
+
+.likeButton:disabled {
+    background-color: transparent;
+    color: #000;
+    cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+    transition: all .3s;
+}
+
+.unlikeButton {
+    border: none;
+    background-color: transparent;
+    color: #878686;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+    height: 100%;
+    width: 4rem;
+    transition: all .3s;
+}
+
+.unlikeButton:disabled {
+    color: #000;
+    cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+    transition: all .3s;
+}
+
+.likeButton:hover {
+    color: #9081FF;
+    transition: all .3s;
+    background-color: #F8FAF7;
+    border-radius: 5px;
+}
+
+.unlikeButton:hover {
+    color: #ff8181;
+    transition: all .3s;
+    background-color: #F8FAF7;
+    border-radius: 5px;
+}
+
+.likeButtonClicked {
+    border: none;
+    background-color: transparent;
+    color: #9081FF;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+    width: 4rem;
+    height: 100%;
+    transition: all .3s;
+}
+
+.likeButtonClicked:disabled {
+    color: #000;
+    cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+    transition: all .3s;
+}
+
+.unlikeButtonClicked {
+    border: none;
+    background-color: transparent;
+    color: #ff8181;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+    width: 4rem;
+    height: 100%;
+    transition: all .3s;
+}
+
+.unlikeButtonClicked:disabled {
+    color: #000;
+    cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+    transition: all .3s;
+}
+
+.likeButtonClicked:hover {
+    color: #9081FF;
+    transition: all .3s;
+    border-radius: 5px;
+}
+
+.unlikeButtonClicked:hover {
+    color: #ff8181;
+    transition: all .3s;
+    border-radius: 5px;
+}
+
+/* DARK MODE CLASSES */
+
+.CommentDark {
+    background-color: #292547;
+    box-sizing: border-box;
+    border-bottom: solid 1px #211e3b;
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.likeAreaDark {
+    background-color: #292547;
+    box-sizing: border-box;
+    width: 100%;
+    height: 3rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.likesDark {
+    margin: 0;
+    font-size: 12px;
+}
+
+.userAreaDark {
+    box-sizing: border-box;
+    padding: 7px;
+    margin: 0;
+    padding-bottom: 2px;
+    padding-left: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.profileImgDark {
+    box-sizing: border-box;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    margin-right: .2rem;
+    margin-left: 5px;
+    transition: all .3s;
+}
+
+.profileImgDark:hover {
+    transition: all .3s;
+}
+
+.UserDark {
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-family: 'Manrope', sans-serif;
+    font-weight: normal;
+    margin: 0;
+}
+
+.UserDark a {
+    text-decoration: none;
+    color:#fff;
+    padding-left: 0.5rem;
+}
+
+.UserDark a:hover {
+    color: #fff;
+    text-decoration: underline;
+    transition: all .3s;
+}
+
+.contentDark {
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px 30px;
+    margin: 0;
+    box-sizing: border-box;
+    color:#fff;
+    font-weight: normal;
+}
+
+.likesDark {
+    color: #fff;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    margin-left: 1rem;
+}
+
+.likesUpDark {
+    color: #9081FF;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    margin-left: 1rem;
+}
+
+.likesDownDark {
+    color: #ff8181;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    margin-left: 1rem;
+}
+
+.likeButtonDark {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+    width: 4rem;
+    height: 100%;
+    transition: all .3s;
+}
+
+.likeButtonDark:disabled {
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+    transition: all .3s;
+}
+
+.unlikeButtonDark {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+    height: 100%;
+    width: 4rem;
+    transition: all .3s;
+}
+
+.unlikeButtonDark:disabled {
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+    transition: all .3s;
+}
+
+.likeButtonDark:hover {
+    color: #9081FF;
+    transition: all .3s;
+    background-color: #211e3b;
+    border-radius: 5px;
+}
+
+.unlikeButtonDark:hover {
+    color: #ff8181;
+    transition: all .3s;
+    background-color: #211e3b;
+    border-radius: 5px;
+}
+
+

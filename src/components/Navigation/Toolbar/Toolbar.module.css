@@ -1,0 +1,104 @@
+.Toolbar {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #FDFFFC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 500;
+    box-shadow: 3px 4px 5px -5px rgba(0,0,0,.2);
+    transition: all .3s;
+}
+
+.Toolbar nav {
+    height: 100%;
+    z-index: 600;
+}
+
+.mainContent {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 59%;
+    z-index: 600;
+}
+
+
+@media (max-width: 850px) {
+    .DesktopOnly {
+        display: none;
+    }
+}
+
+@media (max-width: 850px) {
+    .mainContent {
+        width: 100%;
+        height: 60px;
+        z-index: 600;
+    }
+
+    .Toolbar {
+        height: 120px;
+        flex-direction: column;
+        z-index: 500;
+    }
+
+    .Toolbar input {
+        width: 100%;
+    }
+
+    :global(.ToolbarHidden) {
+        transform: translateY(-10rem);
+        transition: all .3s;
+      }
+}
+
+
+/* DARK MODE CLASSES */ 
+
+.ToolbarDark {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #252140;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 500;
+    transition: all .3s;
+}
+
+.ToolbarDark nav {
+    height: 100%;
+    z-index: 600;
+}
+
+
+
+@media (max-width: 850px) {
+    .mainContent {
+        width: 100%;
+        height: 60px;
+        z-index: 600;
+    }
+
+    .ToolbarDark {
+        height: 120px;
+        flex-direction: column;
+        z-index: 500;
+    }
+
+    .ToolbarDark input {
+        width: 100%;
+    }
+}

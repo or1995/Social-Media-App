@@ -1,0 +1,89 @@
+.NavigationItems {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    display: flex;
+}
+
+:global(.outline) svg {
+    width: 2rem;
+    height: 2rem;
+    fill: #949494;
+}
+
+.outline svg {
+    display: none;
+}
+
+:global(.fill) svg {
+    display: none;
+    width: 2rem;
+    height: 2rem;
+    margin-top: -.2rem;
+    fill: #949494;
+}
+
+.fill svg {
+    display: block;
+}
+
+.NavigationItems h3 {
+    display: none;
+}
+
+
+.user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.userName {
+    text-transform: uppercase;
+    font-family: 'Manrope', sans-serif;
+    font-size: 10px;
+    margin: 0;
+
+}
+
+@media (min-width: 850px) {
+    .NavigationItems {
+        flex-direction: row;
+    }
+}
+
+/*DARK MODE CLASSES*/
+
+.NavigationItemsDark {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    display: flex;
+}
+
+.NavigationItemsDark svg {
+    width: 2rem;
+    height: 2rem;
+    fill: #FDFFFC;
+}
+
+.NavigationItemsDark h3 {
+    display: none;
+}
+
+@media (min-width: 850px) {
+    .NavigationItemsDark {
+        flex-direction: row;
+    }
+}
+
+

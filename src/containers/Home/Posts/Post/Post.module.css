@@ -1,0 +1,544 @@
+.post {
+    width: 100%;
+    max-width: 100%;
+    min-height: 13rem;
+    background-color: #FDFFFC;
+    box-sizing: border-box;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px -2px rgba(0,0,0,.2);
+}
+
+
+
+.content {
+    box-sizing: border-box;
+    line-height: 1.5;
+    margin: 5px;
+    padding: 1rem;
+    padding-left: 2.3rem;
+    padding-right: 1.5rem;
+    padding-top: 10px;
+    padding-bottom: 0;
+    height: 70%;
+    width: 80%;
+    font-family: 'Manrope', sans-serif;
+    font-weight: normal;
+    color:#5C5C5C;
+    width: 100%;
+    cursor: pointer;
+}
+
+.imgExternalLink {
+    width: 100%;
+}
+
+.contentImg {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    padding-bottom: .5rem;
+}
+
+.player {
+    margin-top: 10px;
+    padding-bottom: .5rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.player div {
+    width: 20px;
+}
+
+.userArea {
+    box-sizing: border-box;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #fafafa;
+}
+
+.profileImg {
+    box-sizing: border-box;
+    border-radius: 50%;
+    width: 2.4rem;
+    height: 2.4rem;
+    /*border: solid 2px #9081FF;*/
+    margin-right: .2rem;
+    margin-left: 5px;
+    transition: all .3s;
+}
+
+.profileImg:hover {
+    border: solid 3px #9081FF;
+    transition: all .3s;
+}
+
+.user {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+}
+
+.user a {
+    text-decoration: none;
+    color:#5C5C5C;
+    padding-left: 0.5rem;
+    transition: all .3s;
+}
+
+.user a:hover {
+    color: #424242;
+    text-decoration: underline;
+    transition: all .3s;
+}
+
+.likeArea {
+    background-color: transparent;
+    box-sizing: border-box;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-top: 4px;
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+}
+
+.likeArea div {
+    height: 100%;
+}
+
+.likeSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.comments {
+    border: none;
+    background-color: transparent;
+    color: #5C5C5C;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+    margin-right: 1.6rem;
+    height: 100%;
+    transition: all .3s;
+    border-radius: 5px;
+}
+
+.comments:hover {
+    background-color: #F8FAF7;
+    transition: all .3s;
+}
+
+.likes {
+    color: #5C5C5C;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.2rem;
+    margin: 0;
+    margin-left: 1rem;
+}
+
+.likesUp {
+    color: #9081FF;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.2rem;
+    margin: 0;
+    margin-left: 1rem;
+}
+
+.likesDown {
+    color: #ff8181;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.2rem;
+    margin: 0;
+    margin-left: 1rem;
+}
+
+.likeButton {
+    border: none;
+    background-color: transparent;
+    color: #5C5C5C;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+    width: 5rem;
+    height: 100%;
+    transition: all .3s;
+}
+
+.likeButton:disabled {
+    background-color: transparent;
+    color: #5C5C5C;
+    cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+    transition: all .3s;
+}
+
+.unlikeButton {
+    border: none;
+    background-color: transparent;
+    color: #5C5C5C;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+    height: 100%;
+    width: 5rem;
+    transition: all .3s;
+}
+
+.unlikeButton:disabled {
+    color: #5C5C5C;
+    cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+    transition: all .3s;
+}
+
+.likeButton:hover {
+    color: #9081FF;
+    transition: all .3s;
+    background-color: #F8FAF7;
+    border-radius: 5px;
+}
+
+.unlikeButton:hover {
+    color: #ff8181;
+    transition: all .3s;
+    background-color: #F8FAF7;
+    border-radius: 5px;
+}
+
+.likeButtonClicked {
+    border: none;
+    background-color: transparent;
+    color: #9081FF;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+    width: 5rem;
+    height: 100%;
+    transition: all .3s;
+}
+
+.likeButtonClicked:disabled {
+    color: #9081FF;
+    cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+    transition: all .3s;
+}
+
+.unlikeButtonClicked {
+    border: none;
+    background-color: transparent;
+    color: #ff8181;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+    width: 5rem;
+    height: 100%;
+    transition: all .3s;
+}
+
+.unlikeButtonClicked:disabled {
+    color: #ff8181;
+    cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+    transition: all .3s;
+}
+
+.likeButtonClicked:hover {
+    color: #9081FF;
+    transition: all .3s;
+    border-radius: 5px;
+}
+
+.unlikeButtonClicked:hover {
+    color: #ff8181;
+    transition: all .3s;
+    border-radius: 5px;
+}
+
+
+
+/* DARK MODE CLASSES */
+
+.postDark {
+    width: 100%;
+    max-width: 100%;
+    min-height: 13rem;
+    background-color: #292547;
+    box-sizing: border-box;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px -2px rgba(0,0,0,.2);
+}
+
+.contentDark {
+    box-sizing: border-box;
+    line-height: 1.5;
+    margin: 5px;
+    padding: 1rem;
+    padding-left: 2.3rem;
+    padding-right: 1.5rem;
+    padding-top: 10px;
+    padding-bottom: 0;
+    height: 70%;
+    width: 80%;
+    font-family: 'Manrope', sans-serif;
+    font-weight: normal;
+    color:#FFF;
+    width: 100%;
+    cursor: pointer;
+}
+
+.userAreaDark {
+    box-sizing: border-box;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #211e3b;
+}
+
+.profileImgDark {
+    box-sizing: border-box;
+    border-radius: 50%;
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-right: .2rem;
+    margin-left: 5px;
+    transition: all .3s;
+}
+
+.profileImgDark:hover {
+    border: solid 3px #9081FF;
+    transition: all .3s;
+}
+
+.userDark {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+}
+
+.userDark a {
+    text-decoration: none;
+    color:#fff;
+    padding-left: 0.5rem;
+    transition: all .3s;
+}
+
+.userDark a:hover {
+    color: #fff;
+    text-decoration: underline;
+    transition: all .3s;
+}
+
+.commentsDark {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+    margin-right: 1.6rem;
+    height: 100%;
+    transition: all .3s;
+    border-radius: 5px;
+}
+
+.commentsDark:hover {
+    background-color: #211e3b;
+    transition: all .3s;
+}
+
+.likesDark {
+    color: #fff;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.2rem;
+    margin: 0;
+    margin-left: 1rem;
+}
+
+.likesUpDark {
+    color: #9081FF;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.2rem;
+    margin: 0;
+    margin-left: 1rem;
+}
+
+.likesDownDark {
+    color: #ff8181;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.2rem;
+    margin: 0;
+    margin-left: 1rem;
+}
+
+.likeButtonDark {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+    width: 5rem;
+    height: 100%;
+    transition: all .3s;
+}
+
+.likeButtonDark:disabled {
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+    transition: all .3s;
+}
+
+.unlikeButtonDark {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+    height: 100%;
+    width: 5rem;
+    transition: all .3s;
+}
+
+.unlikeButtonDark:disabled {
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+    transition: all .3s;
+}
+
+.likeButtonDark:hover {
+    color: #9081FF;
+    transition: all .3s;
+    background-color: #211e3b;
+    border-radius: 5px;
+}
+
+.unlikeButtonDark:hover {
+    color: #ff8181;
+    transition: all .3s;
+    background-color: #211e3b;
+    border-radius: 5px;
+}
+
+@media (max-width: 450px) {
+    .likeButton {
+        font-size: 1rem;
+        width: 4rem; 
+    }
+
+    .unlikeButton {
+        font-size: 1rem;
+        width: 4rem; 
+    }
+
+    .comments {
+        font-size: 1rem;
+    }
+
+    .commentsDark {
+        font-size: 1rem;
+    }
+
+    .likeButtonDark {
+        font-size: 1rem;
+        width: 4rem; 
+    }
+
+    .unlikeButtonDark {
+        font-size: 1rem;
+        width: 4rem; 
+    }
+
+    .likeButtonClicked {
+        font-size: 1rem;
+        width: 4rem; 
+    }
+
+    .unlikeButtonClicked {
+        font-size: 1rem;
+        width: 4rem; 
+    }
+
+    .likes {
+        font-size: 1rem;
+        margin-left: 0rem;
+    }
+    
+    .likesUp {
+        font-size: 1rem;
+        margin-left: 0rem;
+    }
+    
+    .likesDown {
+        font-size: 1rem;
+        margin-left: 0rem;
+    }
+
+    .likesDark {
+        font-size: 1rem;
+        margin-left: 0rem;
+    }
+    
+    .likesUpDark {
+        font-size: 1rem;
+        margin-left: 0rem;
+    }
+    
+    .likesDownDark {
+        font-size: 1rem;
+        margin-left: 0rem;
+    }
+  
+}
+
+

@@ -1,0 +1,60 @@
+.Content {
+    margin-top: 52px;
+}
+
+.userSearch {
+    width: 100%;
+    background-color: #9081FF;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    box-sizing: border-box;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+.userSearch h3 {
+    color: #fff;
+    font-weight: normal;
+    margin: 0;
+}
+
+.userSearch svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: #fff;
+    margin-right: .5rem;
+}
+
+.postSearch {
+    width: 100%;
+    background-color: #9081FF;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.postSearch h3 {
+    color: #fff;
+    font-weight: normal;
+    margin: 0;
+}
+
+.postSearch svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: #fff;
+    margin-right: .5rem;
+}
+
+@media (max-width: 850px) {
+    
+}

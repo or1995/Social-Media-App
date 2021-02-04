@@ -1,0 +1,233 @@
+.NavigationItem {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.active :global(.outline) svg {
+    display: none;
+    width: 2rem;
+    height: 2rem;
+    fill: #949494;
+}
+
+.active :global(.fill) svg {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    fill: #949494;
+}
+
+.NavigationItem a {
+    padding-left: 10px;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    z-index: 100;
+    padding-left: 2.8rem;
+}
+
+.NavigationItem a svg {
+    z-index: 110;
+    transition: all .5s;
+}
+
+
+.NavigationItem a span{
+    color: #949494;
+    z-index: 100;
+    margin-left: 1rem;
+    font-family: 'Manrope', sans-serif;
+    transition: all .5s;
+}
+
+.NavigationItem a:hover {
+    background-color: #F2F1F0;
+    transition: all .5s;
+}
+
+
+
+.NavigationItem a:hover svg,
+.NavigationItem a.active svg{
+    fill: #9081FF;
+    transition: all .5s;
+}
+
+.NavigationItem a:hover span,
+.NavigationItem a.active span{
+    color: #9081FF;
+    transition: all .5s;
+}
+
+@media (min-width: 850px) {
+
+    .NavigationItem a::before {
+        display: none;
+    }
+
+    .NavigationItem {
+        margin: 0;
+        display: flex;
+        height: 80%;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        margin-right: 10px;
+    }
+
+    .active :global(.outline) svg {
+        display: none;
+        width: 2rem;
+        height: 2rem;
+        fill: #949494;
+    }
+
+    .active :global(.fill) svg {
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        fill: #949494;
+    }
+
+    .NavigationItem:last-child {
+        margin-right: 0px;
+    }
+    
+    .NavigationItem a {
+        border-radius: 5px;
+        color: #b1b4b5;
+        height: 100%;
+        padding: 16px 10px;
+        border-bottom: 0px solid transparent;
+    }
+
+    .navigationItem a:active,
+    .NavigationItem a.active {
+        color: #9081FF;
+        transition: .5s all;
+        
+    }
+
+    .NavigationItem a:hover {
+        background-color: #F8FAF7;
+        padding: 10px;
+        color: #9081FF;
+        transition: .5s all;
+    }
+}
+
+/* DARK MODE CLASSES */
+
+.NavigationItemDark {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.NavigationItemDark a {
+    padding-left: 10px;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    z-index: 100;
+    padding-left: 2.8rem;
+}
+
+.NavigationItemDark a svg {
+    z-index: 110;
+    transition: all .5s;
+}
+
+
+.NavigationItemDark a span{
+    color: #fff;
+    z-index: 100;
+    margin-left: 1rem;
+    font-family: 'Manrope', sans-serif;
+    transition: all .5s;
+}
+
+.NavigationItemDark a:hover {
+    background-color: #211e3b;
+    transition: all .5s;
+}
+
+.NavigationItemDark a:hover svg,
+.NavigationItemDark a.active svg{
+    fill: #9081FF;
+    transition: all .5s;
+}
+
+.NavigationItemDark a:hover span,
+.NavigationItemDark a.active span{
+    color: #fff;
+    transition: all .5s;
+}
+
+@media (min-width: 850px) {
+
+    .NavigationItemDark a::before {
+        display: none;
+    }
+
+    .NavigationItemDark {
+        margin: 0;
+        display: flex;
+        height: 80%;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        margin-right: 10px;
+    }
+
+    .NavigationItemDark:last-child {
+        margin-right: 0px;
+    }
+    
+    .NavigationItemDark a {
+        border-radius: 5px;
+        color: #fff;
+        height: 100%;
+        padding: 16px 10px;
+        border-bottom: 0px solid transparent;
+    }
+
+    .navigationItemDark a:active,
+    .NavigationItemDark a.active {
+        color: #fff;
+        transition: .5s all;
+    }
+
+    .NavigationItemDark a:hover {
+        background-color: #211e3b;
+        padding: 10px;
+        color: #fff;
+        transition: .5s all;
+    }
+
+    .NavigationItemDark a:hover svg,
+    .NavigationItemDark a.active svg{
+        border-radius: 5px;
+        fill: #9081FF;
+        transition: all .5s;
+    }
+}

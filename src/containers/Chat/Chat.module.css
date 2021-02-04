@@ -1,0 +1,228 @@
+.middle {
+    position: absolute;
+    top: 4.8rem;
+    left: 23.7%;
+    width: 46.3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    /*box-shadow: 0px 3px 5px -2px rgba(0,0,0,.2);*/
+    border-radius: 5px;
+    height: 62vh;
+    box-sizing: border-box;
+}
+
+.dummyone {
+    top: 4.8rem;
+    left: 2%;
+    width: 19vw;
+    height: 85vh;
+    background-color: #FDFFFC;
+    position: fixed;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px -2px rgba(0,0,0,.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dummytwo {
+    top: 4.8rem;
+    right: 2%;
+    width: 25vw;
+    height: 85vh;
+    background-color: #FDFFFC;
+    position: fixed;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px -2px rgba(0,0,0,.2);
+    box-sizing: border-box;
+}
+
+.footer {
+    font-size: 8px;
+    font-weight: 100;
+    font-family: 'Manrope', sans-serif;
+    font-weight: normal;
+    color: #9081FF;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer a {
+    font-weight: bold;
+    color: #b484db;
+}
+
+.footer a:hover {
+    color: #d199ff;
+    transition: all .3s;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Manrope', sans-serif;
+}
+
+.message h1 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #9081FF;
+}
+
+.message h3 {
+    font-weight: normal;
+    margin: 0;
+    font-size: 1rem;
+    color: #5C5C5C;
+}
+
+@media (max-width: 850px) {
+
+    .dummytwo {
+        position: absolute;
+        width: 96%;
+        top: 130px;
+        left: 2%;
+        height: 77vh;
+        box-sizing: border-box;
+    }
+
+    .dummyone {
+        display: none;
+        width: 0;
+        height: 0;
+        position: relative;
+    }
+
+    .middle {
+        display: none;
+        width: 0;
+        height: 0;
+        position: relative;
+        height: 85vh;
+    }
+}
+
+/* DARK MODE CLASSES */
+
+.middleDark {
+    position: absolute;
+    top: 4.8rem;
+    left: 23.7%;
+    width: 46.3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    /*box-shadow: 0px 3px 5px -2px rgba(0,0,0,.2);*/
+    border-radius: 5px;
+    height: 62vh;
+    box-sizing: border-box;
+}
+
+.dummyoneDark {
+    top: 4.8rem;
+    left: 2%;
+    width: 19vw;
+    height: 85vh;
+    background-color: #252140;
+    position: fixed;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px -2px rgba(0,0,0,.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dummytwoDark {
+    top: 4.8rem;
+    right: 2%;
+    width: 25vw;
+    height: 85vh;
+    background-color: #252140;
+    position: fixed;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px -2px rgba(0,0,0,.2);
+    box-sizing: border-box;
+}
+
+.footerDark {
+    font-size: 8px;
+    font-weight: 100;
+    font-family: 'Manrope', sans-serif;
+    font-weight: normal;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerDark a {
+    font-weight: bold;
+    color: #fff;
+}
+
+.footerDark a:hover {
+    color: #fff;
+    transition: all .3s;
+}
+
+.messageDark {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Manrope', sans-serif;
+}
+
+.messageDark h1 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.messageDark h3 {
+    font-weight: normal;
+    margin: 0;
+    font-size: 1rem;
+    color: #fff;
+}
+
+@media (max-width: 850px) {
+
+    .dummytwoDark {
+        position: absolute;
+        width: 96%;
+        top: 130px;
+        left: 2%;
+        height: 77vh;
+        box-sizing: border-box;
+    }
+
+    .dummyoneDark {
+        display: none;
+        width: 0;
+        height: 0;
+        position: relative;
+    }
+
+    .middleDark {
+        display: none;
+        width: 0;
+        height: 0;
+        position: relative;
+        height: 85vh;
+    }
+}
+

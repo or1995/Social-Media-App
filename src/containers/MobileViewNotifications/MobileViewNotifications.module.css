@@ -1,0 +1,43 @@
+.MobileViewNotifications {
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 1rem;
+}
+
+.shadow {
+    box-shadow: 0px 3px 5px -2px rgba(0,0,0,.2);
+    background-color: #FDFFFC;
+    border-radius: 5px;
+}
+
+@media (max-width: 850px) {
+    .MobileViewNotifications {
+        padding-top: 4rem;
+    }
+}
+
+/* DARK MODE CLASSES */
+
+.MobileViewNotificationsDark {
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 1rem;
+}
+
+.shadowDark {
+    box-shadow: 0px 3px 5px -2px rgba(0,0,0,.2);
+    background-color: #292547;
+    border-radius: 5px;
+}
+
+@media (max-width: 850px) {
+    .MobileViewNotificationsDark {
+        padding-top: 4rem;
+    }
+}
+
+

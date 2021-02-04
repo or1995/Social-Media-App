@@ -1,0 +1,139 @@
+.middle {
+    position: absolute;
+    top: 2.5rem;
+    left: 16%;
+    width: 46.3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dummyone {
+    top: 4.8rem;
+    left: 2%;
+    width: 19vw;
+    height: 85vh;
+    background-color: #FDFFFC;
+    position: fixed;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px -2px rgba(0,0,0,.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dummytwo {
+    top: 4.8rem;
+    right: 2%;
+    width: 25vw;
+    height: 85vh;
+    background-color: #FDFFFC;
+    position: fixed;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px -2px rgba(0,0,0,.2);
+}
+
+@media (max-width: 850px) {
+    .middle {
+        width: 95%;
+        top: 4.2rem;
+        left: 2.5%;
+
+    }
+
+    .dummyone {
+        display: none;
+    }
+
+    .dummytwo {
+        display: none;
+    }
+}
+
+.footer {
+    font-size: 8px;
+    font-weight: 100;
+    font-family: 'Manrope', sans-serif;
+    font-weight: normal;
+    color: #9081FF;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer a {
+    font-weight: bold;
+    color: #b484db;
+}
+
+.footer a:hover {
+    color: #d199ff;
+    transition: all .3s;
+}
+
+
+/* DARK MODE CLASSES */
+
+.dummyoneDark {
+    top: 4.8rem;
+    left: 2%;
+    width: 19vw;
+    height: 85vh;
+    background-color: #292547;
+    position: fixed;
+    border-radius: 5px;
+    /*border: solid 1px #453e78;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 3px 5px -2px rgba(0,0,0,.2);
+}
+
+.dummytwoDark {
+    top: 4.8rem;
+    right: 2%;
+    width: 25vw;
+    height: 85vh;
+    background-color: #292547;
+    /*border: solid 1px #453e78;*/
+    position: fixed;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px -2px rgba(0,0,0,.2);
+}
+
+.footerDark {
+    font-size: 8px;
+    font-weight: 100;
+    font-family: 'Manrope', sans-serif;
+    font-weight: normal;
+    color: #FDFFFC;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerDark a {
+    font-weight: bold;
+    color: #FDFFFC;
+}
+
+.footerDark a:hover {
+    color: #FDFFFC;
+    transition: all .3s;
+}
+
+@media (max-width: 850px) {
+
+    .dummyoneDark {
+        display: none;
+    }
+
+    .dummytwoDark {
+        display: none;
+    }
+}

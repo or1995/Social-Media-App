@@ -1,0 +1,140 @@
+.searchBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.searchBar input {
+    height: 2.3rem;
+    width: 20rem;
+    border-radius: 3rem;
+    padding-bottom: 7px;
+    padding-left: 20px;
+}
+
+.searchBar input::placeholder {
+    color: #BFBFBF;
+}
+
+.searchBar input:hover {
+    background-color: #e5e4eb;
+    transition: all .3s;
+}
+
+.searchBar input:focus {
+    background-color: #fff;
+}
+
+.searchBar label {
+    display: none;
+}
+
+.searchButton {
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    margin-left: -2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchButton svg {
+    height: 1.2rem;
+    width: 1.2rem;
+    fill:#BFBFBF;
+}
+
+.searchButton:focus {
+    outline: none;
+}
+
+@media (max-width: 850px) {
+    .searchBar {
+        width: 100%;
+        margin-right: 1rem;
+    }
+
+    .searchButton {
+        margin-left: -3rem;
+    }
+
+    .searchBar input {
+        width: 100%;
+    }
+}
+
+/* DARK MODE CLASSES */
+
+.searchBarDark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.searchBarDark input {
+    height: 2.3rem;
+    width: 20rem;
+    border-radius: 3rem;
+    padding-bottom: 7px;
+    padding-left: 20px;
+    background-color: #322d57;
+}
+
+.searchBarDark input::placeholder {
+    color: #BFBFBF;
+}
+
+.searchBarDark input:hover {
+    background-color: #47407d;
+    transition: all .3s;
+}
+
+.searchBarDark input:focus {
+    background-color: #47407d;
+    color: #fff;
+}
+
+.searchBarDark label {
+    display: none;
+}
+
+.searchButtonDark {
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    margin-left: -2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchButtonDark svg {
+    height: 1.2rem;
+    width: 1.2rem;
+    fill:#BFBFBF;
+}
+
+.searchButtonDark:focus {
+    outline: none;
+}
+
+@media (max-width: 850px) {
+    .searchBarDark {
+        width: 100%;
+        margin-right: 1rem;
+    }
+
+    .searchButtonDark {
+        margin-left: -3rem;
+    }
+
+    .searchBarDark input {
+        width: 100%;
+    }
+}
+

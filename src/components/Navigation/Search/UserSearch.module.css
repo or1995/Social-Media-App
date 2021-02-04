@@ -1,0 +1,184 @@
+.search {
+    padding: 1rem;
+    box-sizing: border-box;
+    max-height: 40%;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.search:hover {
+    overflow-y: overlay;
+    transition: all .3s;
+}
+
+.search::-webkit-scrollbar {
+    width: 10px;
+    transition: all .3s;
+}
+  
+/* Track */
+.search::-webkit-scrollbar-track {
+    background: transparent;
+}
+  
+/* Handle */
+.search::-webkit-scrollbar-thumb {
+    background: #9081FF;
+    border-top: solid 2px #fff;
+    border-bottom: solid 2px #fff;
+}
+
+.searchRes {
+    width: 97%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: .3rem;
+    height: 2rem;
+    overflow: hidden;
+}
+
+.userName {
+    margin: 0;
+    color:#5C5C5C;
+    font-weight: normal;
+}
+
+.searchRes img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin-right: .5rem;
+}
+
+.postLink {
+    width: 100%;
+    color:#5C5C5C;
+    transition: all .3s;
+}
+
+.searchRes:hover {
+    border-radius: 5px;
+    background-color: #EDECEB;
+    transition: all .3s;
+}
+
+.postLink a {
+    width: 100%;
+    color:#5C5C5C;
+}
+
+.noRes {
+    width: 100%;
+    height: 1.5rem;
+    text-align: center;
+    margin: 0;
+}
+
+.spinnerDiv {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 850px) {
+    .search {
+        padding: 1rem;
+        box-sizing: border-box;
+        max-height: 50%;
+        width: 100%;
+        overflow-y: hidden;
+    }
+}
+
+/* DARK MODE CLASSES */
+
+.searchDark {
+    padding: 1rem;
+    box-sizing: border-box;
+    max-height: 40%;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.searchDark:hover {
+    overflow-y: overlay;
+    transition: all .3s;
+}
+
+.searchDark::-webkit-scrollbar {
+    width: 10px;
+    transition: all .3s;
+}
+  
+/* Track */
+.searchDark::-webkit-scrollbar-track {
+    background: transparent;
+}
+  
+/* Handle */
+.searchDark::-webkit-scrollbar-thumb {
+    background: #453e78;
+    border-top: solid 2px #292547;
+    border-bottom: solid 2px #292547;
+}
+
+.searchResDark {
+    width: 97%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: .3rem;
+    height: 2rem;
+    overflow: hidden;
+}
+
+.userNameDark {
+    margin: 0;
+    color:#fff;
+    font-weight: normal;
+}
+
+.searchResDark img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin-right: .5rem;
+}
+
+.postLinkDark {
+    width: 100%;
+    color:#fff;
+    transition: all .3s;
+}
+
+.searchResDark:hover {
+    border-radius: 5px;
+    background-color: #211e3b;
+    transition: all .3s;
+}
+
+.postLinkDark a {
+    width: 100%;
+    color:#fff;
+}
+
+.noResDark {
+    width: 100%;
+    height: 1.5rem;
+    text-align: center;
+    margin: 0;
+}
+
+@media (max-width: 850px) {
+    .searchDark {
+        padding: 1rem;
+        box-sizing: border-box;
+        max-height: 50%;
+        width: 100%;
+        overflow-y: hidden;
+    }
+}
+

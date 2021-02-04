@@ -1,0 +1,7 @@
+body {
+  background-color: #f1f0f7;
+}
+
+button:focus {
+  outline: none;
+}

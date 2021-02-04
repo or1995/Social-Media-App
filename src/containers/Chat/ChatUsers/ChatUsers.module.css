@@ -1,0 +1,231 @@
+.userLink {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: .5rem;
+}
+
+.userLink:hover .followedUser {
+    background-color: #F2F1F0;
+    transition: all .3s;
+}
+
+.userChat {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding-bottom: 1rem;
+    margin: 0;
+    height: 100%;
+}
+
+.chat {
+    margin-top: .5rem;
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chat::-webkit-scrollbar {
+    width: 10px;
+    transition: all .3s;
+}
+  
+.chat::-webkit-scrollbar-track {
+    background: transparent;
+}
+  
+.chat::-webkit-scrollbar-thumb {
+    background: #9081FF;
+    border-top: solid 1px #fff;
+    border-bottom: solid 1px #fff;
+}
+
+.followedUser {
+    display: flex;
+    align-items: center;
+    height: 3.8rem;
+    width: 100%;
+    transition: all .3s;
+    border-radius: 5px;
+    padding-left: 3rem;
+    box-sizing: border-box;
+}
+
+.followedUser img {
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 1rem;
+}
+
+.followedUser h3 {
+    font-family: 'Manrope', sans-serif;
+    color:#828282;
+    text-transform: capitalize;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.header {
+    width: 100%;
+    background-color: #9081FF;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.header svg {
+    width: 2rem;
+    height: 2rem;
+    fill: #FDFFFC;
+    margin-right: .5rem;
+}
+
+.header h3 {
+    text-transform: capitalize;
+    font-weight: normal;
+    font-size: 20px;
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    color:#FDFFFC;
+}
+
+.smallScreen {
+    display: none;
+}
+
+@media (max-width: 850px) {
+    .smallScreen {
+        display: block;
+    }
+}
+
+/* DARK MODE CLASSES */
+
+.userLinkDark {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: .5rem;
+    background-color: #252140;
+}
+
+.userLinkDark:hover .followedUserDark {
+    background-color: #211e3b;
+    transition: all .3s;
+}
+
+.userChatDark {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding-bottom: 1rem;
+    margin: 0;
+    height: 100%;
+}
+
+.chatDark {
+    margin-top: .5rem;
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chatDark::-webkit-scrollbar {
+    width: 10px;
+    transition: all .3s;
+}
+  
+.chatDark::-webkit-scrollbar-track {
+    background: transparent;
+}
+  
+.chatDark::-webkit-scrollbar-thumb {
+    background: #453e78;
+    border-top: solid 2px #292547;
+    border-bottom: solid 2px #292547;
+}
+
+.followedUserDark {
+    display: flex;
+    align-items: center;
+    height: 3.8rem;
+    width: 100%;
+    transition: all .3s;
+    border-radius: 5px;
+    padding-left: 3rem;
+    box-sizing: border-box;
+}
+
+.followedUserDark img {
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 1rem;
+}
+
+.followedUserDark h3 {
+    font-family: 'Manrope', sans-serif;
+    color:#fff;
+    text-transform: capitalize;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.headerDark {
+    width: 100%;
+    background-color: #211e3b;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.headerDark svg {
+    width: 2rem;
+    height: 2rem;
+    fill: #fff;
+    margin-right: .5rem;
+}
+
+.headerDark h3 {
+    text-transform: capitalize;
+    font-weight: normal;
+    font-size: 20px;
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    color:#fff;
+}
+
+.smallScreenDark {
+    display: none;
+}
+
+@media (max-width: 850px) {
+    .smallScreenDark {
+        display: block;
+        background-color: #252140;
+    }
+}

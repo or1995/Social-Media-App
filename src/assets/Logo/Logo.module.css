@@ -1,0 +1,103 @@
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.hide {
+    overflow: hidden;
+}
+
+.big {
+    font-size: 1.5rem;
+    color: #9081FF;
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+    /*animation: move 7s linear infinite;*/
+}
+
+.big span {
+    color: #9081FF;
+}
+
+.small {
+    font-size: 1rem;
+    color: #9081FF;
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+}
+
+.small span {
+    color: #9081FF;
+}
+
+.logosvg {
+    height: 3rem;
+    width: 3rem;
+}
+
+.st0 {
+    fill: #9081FF;
+}
+
+.st1 {
+    fill: #9081FF;
+}
+
+.st2 {
+    fill: #fff;
+}
+
+.bigwhite {
+    color: #fff;
+    margin: 0;
+    margin-right: .5rem;
+    font-size: 22px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.whitelogo {
+    display: flex;
+    align-items: center;
+    font-family: 'Pacifico', cursive;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+
+.logowhitesvg {
+    width: 3.3rem;
+    height: 3.3rem;
+    
+}
+
+.logowhitesvg .st1 {
+    fill: #fff;
+    /*animation: fly 1s alternate infinite;*/
+}
+
+.logowhitesvg .st2 {
+    fill: #fff;
+    /*animation: fly 1s alternate infinite;*/
+}
+
+.logowhitesvg .st3 {
+    fill: #fff;
+}
+
+.logowhitesvg .st4 {
+    fill: #fff;
+}
+
+/*@keyframes move{
+     25% , 100% {
+         transform: translateX(0px);
+    }
+    50%, 75%{transform: translateX(-200px);}
+}*/
+
