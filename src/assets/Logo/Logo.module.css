@@ -15,25 +15,25 @@ a {
 
 .big {
     font-size: 1.5rem;
-    color: #9081FF;
+    color: var(--main-color);
     font-family: 'Pacifico', cursive;
     margin: 0;
     /*animation: move 7s linear infinite;*/
 }
 
 .big span {
-    color: #9081FF;
+    color: var(--main-color);
 }
 
 .small {
     font-size: 1rem;
-    color: #9081FF;
+    color: var(--main-color);
     font-family: 'Pacifico', cursive;
     margin: 0;
 }
 
 .small span {
-    color: #9081FF;
+    color: var(--main-color);
 }
 
 .logosvg {
@@ -42,19 +42,19 @@ a {
 }
 
 .st0 {
-    fill: #9081FF;
+    fill: var(--main-color);
 }
 
 .st1 {
-    fill: #9081FF;
+    fill: var(--main-color);
 }
 
 .st2 {
-    fill: #fff;
+    fill: var(--white-color);
 }
 
 .bigwhite {
-    color: #fff;
+    color: var(--white-color);
     margin: 0;
     margin-right: .5rem;
     font-size: 22px;
@@ -77,21 +77,21 @@ a {
 }
 
 .logowhitesvg .st1 {
-    fill: #fff;
+    fill: var(--white-color);
     /*animation: fly 1s alternate infinite;*/
 }
 
 .logowhitesvg .st2 {
-    fill: #fff;
+    fill: var(--white-color);
     /*animation: fly 1s alternate infinite;*/
 }
 
 .logowhitesvg .st3 {
-    fill: #fff;
+    fill: var(--white-color);
 }
 
 .logowhitesvg .st4 {
-    fill: #fff;
+    fill: var(--white-color);
 }
 
 /*@keyframes move{

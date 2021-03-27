@@ -4,7 +4,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #FDFFFC;
+    background-color: var(--very-light-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -68,7 +68,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #252140;
+    background-color: var(--main-very-dark-color);
     display: flex;
     justify-content: space-between;
     align-items: center;

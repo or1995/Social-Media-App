@@ -8,14 +8,14 @@
 
 .endOfPosts{
     text-align: center;
-    color: #9081FF;
+    color: var(--main-color);
     font-family: 'Manrope', sans-serif;
     font-weight: normal;
     text-shadow: 0px 1px 1px rgba(0,0,0,0.2);
 }
 
 .NoPostsMessages {
-    color: #9081FF;
+    color: var(--main-color);
     font-family: 'Manrope', sans-serif;
     font-weight: normal;
 }
@@ -24,14 +24,14 @@
 
 .endOfPostsDark {
     text-align: center;
-    color: #fff;
+    color: var(--white-color);
     font-family: 'Manrope', sans-serif;
     font-weight: normal;
     text-shadow: 0px 1px 1px rgba(0,0,0,0.2);
 }
 
 .NoPostsMessagesDark {
-    color: #fff;
+    color: var(--white-color);
     font-family: 'Manrope', sans-serif;
     font-weight: normal;
 }

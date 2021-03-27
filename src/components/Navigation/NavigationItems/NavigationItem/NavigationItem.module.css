@@ -12,14 +12,14 @@
     display: none;
     width: 2rem;
     height: 2rem;
-    fill: #949494;
+    fill: var(--grey-color);
 }
 
 .active :global(.fill) svg {
     display: block;
     width: 2rem;
     height: 2rem;
-    fill: #949494;
+    fill: var(--grey-color);
 }
 
 .NavigationItem a {
@@ -42,7 +42,7 @@
 
 
 .NavigationItem a span{
-    color: #949494;
+    color: var(--grey-color);
     z-index: 100;
     margin-left: 1rem;
     font-family: 'Manrope', sans-serif;
@@ -50,7 +50,7 @@
 }
 
 .NavigationItem a:hover {
-    background-color: #F2F1F0;
+    background-color: var(--light-color);
     transition: all .5s;
 }
 
@@ -58,13 +58,13 @@
 
 .NavigationItem a:hover svg,
 .NavigationItem a.active svg{
-    fill: #9081FF;
+    fill: var(--main-color);
     transition: all .5s;
 }
 
 .NavigationItem a:hover span,
 .NavigationItem a.active span{
-    color: #9081FF;
+    color: var(--main-color);
     transition: all .5s;
 }
 
@@ -89,14 +89,14 @@
         display: none;
         width: 2rem;
         height: 2rem;
-        fill: #949494;
+        fill: var(--grey-color);
     }
 
     .active :global(.fill) svg {
         display: block;
         width: 2rem;
         height: 2rem;
-        fill: #949494;
+        fill: var(--grey-color);
     }
 
     .NavigationItem:last-child {
@@ -105,7 +105,7 @@
     
     .NavigationItem a {
         border-radius: 5px;
-        color: #b1b4b5;
+        color: var(--grey-color);
         height: 100%;
         padding: 16px 10px;
         border-bottom: 0px solid transparent;
@@ -113,15 +113,15 @@
 
     .navigationItem a:active,
     .NavigationItem a.active {
-        color: #9081FF;
+        color: var(--main-color);
         transition: .5s all;
         
     }
 
     .NavigationItem a:hover {
-        background-color: #F8FAF7;
+        background-color: var(--very-light-color);
         padding: 10px;
-        color: #9081FF;
+        color: var(--main-color);
         transition: .5s all;
     }
 }
@@ -158,7 +158,7 @@
 
 
 .NavigationItemDark a span{
-    color: #fff;
+    color: var(--white-color);
     z-index: 100;
     margin-left: 1rem;
     font-family: 'Manrope', sans-serif;
@@ -166,19 +166,19 @@
 }
 
 .NavigationItemDark a:hover {
-    background-color: #211e3b;
+    background-color: var(--main-very-dark-color);
     transition: all .5s;
 }
 
 .NavigationItemDark a:hover svg,
 .NavigationItemDark a.active svg{
-    fill: #9081FF;
+    fill: var(--main-color);
     transition: all .5s;
 }
 
 .NavigationItemDark a:hover span,
 .NavigationItemDark a.active span{
-    color: #fff;
+    color: var(--white-color);
     transition: all .5s;
 }
 
@@ -205,7 +205,7 @@
     
     .NavigationItemDark a {
         border-radius: 5px;
-        color: #fff;
+        color: var(--white-color);
         height: 100%;
         padding: 16px 10px;
         border-bottom: 0px solid transparent;
@@ -213,21 +213,21 @@
 
     .navigationItemDark a:active,
     .NavigationItemDark a.active {
-        color: #fff;
+        color: var(--white-color);
         transition: .5s all;
     }
 
     .NavigationItemDark a:hover {
-        background-color: #211e3b;
+        background-color: var(--main-very-dark-color);
         padding: 10px;
-        color: #fff;
+        color: var(--white-color);
         transition: .5s all;
     }
 
     .NavigationItemDark a:hover svg,
     .NavigationItemDark a.active svg{
         border-radius: 5px;
-        fill: #9081FF;
+        fill: var(--main-color);
         transition: all .5s;
     }
 }

@@ -14,7 +14,7 @@
     left: 2%;
     width: 19vw;
     height: 85vh;
-    background-color: #FDFFFC;
+    background-color: var(--very-light-color);
     position: fixed;
     border-radius: 5px;
     box-shadow: 0px 3px 5px -2px rgba(0,0,0,.2);
@@ -29,7 +29,7 @@
     right: 2%;
     width: 25vw;
     height: 85vh;
-    background-color: #FDFFFC;
+    background-color: var(--very-light-color);
     position: fixed;
     border-radius: 5px;
     box-shadow: 0px 3px 5px -2px rgba(0,0,0,.2);
@@ -57,7 +57,7 @@
     font-weight: 100;
     font-family: 'Manrope', sans-serif;
     font-weight: normal;
-    color: #9081FF;
+    color: var(--main-color);
     width: 100%;
     display: flex;
     align-items: center;
@@ -66,11 +66,11 @@
 
 .footer a {
     font-weight: bold;
-    color: #b484db;
+    color: var(--main-color);
 }
 
 .footer a:hover {
-    color: #d199ff;
+    color: var(--main-color);
     transition: all .3s;
 }
 
@@ -82,7 +82,7 @@
     left: 2%;
     width: 19vw;
     height: 85vh;
-    background-color: #292547;
+    background-color: var(--main-very-dark-color);
     position: fixed;
     border-radius: 5px;
     /*border: solid 1px #453e78;*/
@@ -98,7 +98,7 @@
     right: 2%;
     width: 25vw;
     height: 85vh;
-    background-color: #292547;
+    background-color: var(--main-very-dark-color);
     /*border: solid 1px #453e78;*/
     position: fixed;
     border-radius: 5px;
@@ -110,7 +110,7 @@
     font-weight: 100;
     font-family: 'Manrope', sans-serif;
     font-weight: normal;
-    color: #FDFFFC;
+    color: var(--very-light-color);
     width: 100%;
     display: flex;
     align-items: center;
@@ -119,11 +119,11 @@
 
 .footerDark a {
     font-weight: bold;
-    color: #FDFFFC;
+    color: var(--very-light-color);
 }
 
 .footerDark a:hover {
-    color: #FDFFFC;
+    color: var(--very-light-color);
     transition: all .3s;
 }
 

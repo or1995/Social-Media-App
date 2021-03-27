@@ -1,6 +1,6 @@
 .CreatePost {
     width: 100%;
-    background-color: #FDFFFC;
+    background-color:  var(--very-light-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,7 +46,7 @@
 }
 
 .urlButton {
-  background-color: #9081FF;
+  background-color: var(--main-color);
   border: none;
   border-radius: 5px;
   width: 3rem;
@@ -62,7 +62,7 @@
 }
 
 .CreatePost textarea:focus {
-    background-color: #fff;
+    background-color: var(--white-color);
 }
 
 :global(.my-node-enter) {
@@ -145,7 +145,7 @@
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    color: #fff;
+    color: var(--white-color);
     font-family: 'Manrope', sans-serif;
     transition: all .3s;
   }
@@ -161,7 +161,7 @@
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    color: #fff;
+    color: var(--white-color);
     font-family: 'Manrope', sans-serif;
     transition: all .3s;
   }
@@ -169,13 +169,13 @@
   .urlPicButton svg {
     width: 1.7rem;
     height: 1.7rem;
-    fill: #9081FF;
+    fill: var(--main-color);
   }
 
   .urlPicButton:hover svg {
     width: 1.7rem;
     height: 1.7rem;
-    fill: #9d91fa;
+    fill: var(--main-color);
   }
   
   .urlVidButton {
@@ -189,7 +189,7 @@
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    color: #fff;
+    color: var(--white-color);
     font-family: 'Manrope', sans-serif;
     transition: all .3s;
   }
@@ -199,20 +199,20 @@
   .urlVidButton svg {
     width: 1.7rem;
     height: 1.7rem;
-    fill: #9081FF;
+    fill: var(--main-color);
   }
 
   .urlVidButton:hover svg {
     width: 1.7rem;
     height: 1.7rem;
-    fill: #9d91fa;
+    fill: var(--main-color);
   }
 
 /* DARK MODE CLASSES */
 
 .CreatePostDark {
   width: 100%;
-  background-color: #292547;
+  background-color: var(--main-very-dark-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -229,7 +229,7 @@
 .CreatePostDark textarea {
   height: 3rem;
   border: none;
-  background-color: #322d57;
+  background-color: var(--main-dark-color);
 }
 
 .CreatePostDark textarea::placeholder {
@@ -261,7 +261,7 @@
 }
 
 .CreatePostDark textarea:focus {
-  background-color: #fff;
+  background-color: var(--white-color);
 }
 
 .url {
@@ -282,7 +282,7 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  color: #fff;
+  color: var(--white-color);
   font-family: 'Manrope', sans-serif;
   transition: all .3s;
 }
@@ -298,7 +298,7 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  color: #fff;
+  color: var(--white-color);
   font-family: 'Manrope', sans-serif;
   transition: all .3s;
 }
@@ -308,13 +308,13 @@
 .urlPicButtonDark svg {
   width: 1.7rem;
   height: 1.7rem;
-  fill: #9081FF;
+  fill: var(--main-color);
 }
 
 .urlPicButtonDark:hover svg {
   width: 1.7rem;
   height: 1.7rem;
-  fill: #9081FF;
+  fill: var(--main-color);
 }
 
 .urlVidButtonDark {
@@ -328,7 +328,7 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  color: #fff;
+  color: var(--white-color);
   font-family: 'Manrope', sans-serif;
   transition: all .3s;
 }
@@ -338,7 +338,7 @@
 .urlVidButtonDark svg {
   width: 1.7rem;
   height: 1.7rem;
-  fill: #9081FF;
+  fill: var(--main-color);
 }
 
 

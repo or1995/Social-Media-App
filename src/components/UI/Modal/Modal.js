@@ -1,7 +1,6 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
 
 import classes from './Modal.module.css';
-import Aux from '../../../hoc/auxiliary';
 import Backdrop from '../Backdrop/Backdrop';
 import {connect} from 'react-redux';
 
@@ -14,7 +13,7 @@ class Modal extends Component {
 
     render() {
         return (
-            <Aux>
+            <Fragment>
                 <Backdrop show={this.props.show} clicked={this.props.modalClosed} />
                 {this.props.type === 'middle' ? <div
                     className={this.props.userTheme === 1 ? classes.ModalDarkMiddle : classes.ModalMiddle}
@@ -33,7 +32,7 @@ class Modal extends Component {
                     }}>
                     {this.props.children}
                 </div>}      
-            </Aux>
+            </Fragment>
         )
     };
 };

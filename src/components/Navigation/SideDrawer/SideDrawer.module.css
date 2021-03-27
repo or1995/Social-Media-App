@@ -6,7 +6,7 @@
     left: 0;
     top: 0;
     z-index: 900;
-    background-color: white;
+    background-color: var(--white-color);
     box-sizing: border-box;
     transition: transform 0.3s ease-out;
     overflow: hidden;
@@ -25,10 +25,10 @@
   
 /* Handle */
 .SideDrawer::-webkit-scrollbar-thumb {
-    background: #9081FF;
-    border-top: solid 2px #fff;
-    border-left: solid 2px #fff;
-    border-bottom: solid 2px #fff;
+    background: var(--main-color);
+    border-top: solid 2px var(--white-color);
+    border-left: solid 2px var(--white-color);
+    border-bottom: solid 2px var(--white-color);
 }
 
 
@@ -51,7 +51,7 @@
 }
 
 .active svg {
-    fill: #9081FF;
+    fill: var(--main-color);
 }
 
 .Open {
@@ -70,7 +70,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #9081FF;
+    background-color: var(--main-color);
     margin-bottom: 1rem;
 }
 
@@ -96,11 +96,11 @@
     font-family: 'Manrope', sans-serif;
     text-transform: capitalize;
     font-weight: normal;
-    color: #fff;
+    color: var(--white-color);
 }
 
 .Logo h1 {
-    color: #9081FF;
+    color: var(--main-color);
     margin: 5px 1px;
 }
 
@@ -132,29 +132,29 @@
     margin-right: 1rem;
     width: 1.8rem;
     height: 1.8rem;
-    fill: #949494;
+    fill: var(--grey-color);
 }
 
 .item h3 {
     margin: 0;
     font-family: 'Manrope', sans-serif;
-    color: #949494;
+    color: var(--grey-color);
     font-weight: normal;
     font-size: 16px;
 }
 
 .nav:hover {
-    background-color: #F2F1F0;
+    background-color: var(--light-color);
     transition: all .5s;
 }
 
 .nav:hover svg {
-    fill: #9081FF;
+    fill: var(--main-color);
     transition: all .3s;
 }
 
 .nav:hover h3 {
-    color: #9081FF;
+    color: var(--main-color);
     transition: all .3s;
 }
 
@@ -170,14 +170,14 @@
 }
 
 .like {
-    color: #fff;
+    color: var(--white-color);
     margin: 0;
     margin-right: 1rem;
     font-weight: normal;
 }
 
 .friend {
-    color: #fff;
+    color: var(--white-color);
     font-weight: normal;
     margin: 0;
 }
@@ -192,7 +192,7 @@
     left: 0;
     top: 0;
     z-index: 900;
-    background-color: #292547;
+    background-color: var(--main-very-dark-color);
     box-sizing: border-box;
     transition: transform 0.3s ease-out;
     overflow: hidden;
@@ -211,10 +211,10 @@
   
 /* Handle */
 .SideDrawerDark::-webkit-scrollbar-thumb {
-    background: #453e78;
-    border-top: solid 2px #292547;
-    border-left: solid 2px #292547;
-    border-bottom: solid 2px #292547;
+    background: var(--main-dark-color);
+    border-top: solid 2px var(--main-very-dark-color);
+    border-left: solid 2px var(--main-very-dark-color);
+    border-bottom: solid 2px var(--main-very-dark-color);
 }
 
 @media (min-width: 850px) {
@@ -231,7 +231,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #9081FF;
+    background-color: var(--main-color);
     margin-bottom: 1rem;
 }
 
@@ -257,11 +257,11 @@
     font-family: 'Manrope', sans-serif;
     text-transform: capitalize;
     font-weight: normal;
-    color: #fff;
+    color: var(--white-color);
 }
 
 .LogoDark h1 {
-    color: #fff;
+    color: var(--white-color);
     margin: 5px 1px;
 }
 
@@ -293,29 +293,29 @@
     margin-right: 1rem;
     width: 1.8rem;
     height: 1.8rem;
-    fill: #fff;
+    fill: var(--white-color);
 }
 
 .itemDark h3 {
     margin: 0;
     font-family: 'Manrope', sans-serif;
-    color: #fff;
+    color: var(--white-color);
     font-weight: normal;
     font-size: 16px;
 }
 
 .navDark:hover {
-    background-color: #1f1c36;
+    background-color: var(--main-very-dark-color);
     transition: all .5s;
 }
 
 .navDark:hover svg {
-    fill: #9081FF;
+    fill: var(--main-color);
     transition: all .3s;
 }
 
 .navDark:hover h3 {
-    color: #fff;
+    color: var(--white-color);
     transition: all .3s;
 }
 
@@ -331,19 +331,19 @@
 }
 
 .likeDark {
-    color: #fff;
+    color: var(--white-color);
     margin: 0;
     margin-right: 1rem;
     font-weight: normal;
 }
 
 .friendDark {
-    color: #fff;
+    color: var(--white-color);
     font-weight: normal;
     margin: 0;
 }
 .activeDark svg {
-    fill: #9081FF;
+    fill: var(--main-color);
 }
 
 .activeDark :global(.fillSide) {

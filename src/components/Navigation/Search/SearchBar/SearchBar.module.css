@@ -81,7 +81,7 @@
     border-radius: 3rem;
     padding-bottom: 7px;
     padding-left: 20px;
-    background-color: #322d57;
+    background-color: var(--main-dark-color);
 }
 
 .searchBarDark input::placeholder {
@@ -89,13 +89,13 @@
 }
 
 .searchBarDark input:hover {
-    background-color: #47407d;
+    background-color: var(--main-dark-color);
     transition: all .3s;
 }
 
 .searchBarDark input:focus {
-    background-color: #47407d;
-    color: #fff;
+    background-color: var(--main-dark-color);
+    color: var(--white-color);
 }
 
 .searchBarDark label {

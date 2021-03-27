@@ -1,5 +1,24 @@
+:root {
+  /* colors */
+  --main-color: #5372E6;
+  --main-dark-color: #262626;
+  --main-very-dark-color: #1A1A1A;
+  --back-light-color: #f1f0f7;
+  --white-color: #fff;
+  --very-light-color: #FDFFFC;
+  --light-color: #EDECEB;
+  --user-area-color: rgb(246, 246, 246);
+  --light-dark-color: #f1f0f7;
+  --grey-color: #5C5C5C;
+  --grey-dark-color: #424242;
+  --secondary-color: #ff8181;
+  /* fonts */
+  --main-font: 'Montserrat', sans-serif; 
+  --title-font: 'Montserrat', sans-serif; 
+}
+
 body {
-  background-color: #f1f0f7;
+  background-color: var(--light-dark-color);
 }
 
 button:focus {

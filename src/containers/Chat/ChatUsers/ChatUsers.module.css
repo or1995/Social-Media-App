@@ -5,7 +5,7 @@
 }
 
 .userLink:hover .followedUser {
-    background-color: #F2F1F0;
+    background-color: var(--vary-light-color);
     transition: all .3s;
 }
 
@@ -42,9 +42,9 @@
 }
   
 .chat::-webkit-scrollbar-thumb {
-    background: #9081FF;
-    border-top: solid 1px #fff;
-    border-bottom: solid 1px #fff;
+    background: var(--main-color);
+    border-top: solid 1px var(--white-color);
+    border-bottom: solid 1px var(--white-color);
 }
 
 .followedUser {
@@ -75,7 +75,7 @@
 
 .header {
     width: 100%;
-    background-color: #9081FF;
+    background-color: var(--main-color);
     padding: 1rem;
     box-sizing: border-box;
     border-radius: 5px;
@@ -89,7 +89,7 @@
 .header svg {
     width: 2rem;
     height: 2rem;
-    fill: #FDFFFC;
+    fill: var(--vary-light-color);
     margin-right: .5rem;
 }
 
@@ -99,7 +99,7 @@
     font-size: 20px;
     margin: 0;
     font-family: 'Manrope', sans-serif;
-    color:#FDFFFC;
+    color:var(--vary-light-color);
 }
 
 .smallScreen {
@@ -118,11 +118,11 @@
     width: 100%;
     box-sizing: border-box;
     padding-left: .5rem;
-    background-color: #252140;
+    background-color: var(--main-dark-color);
 }
 
 .userLinkDark:hover .followedUserDark {
-    background-color: #211e3b;
+    background-color: var(--main-very-dark-color);
     transition: all .3s;
 }
 
@@ -159,9 +159,9 @@
 }
   
 .chatDark::-webkit-scrollbar-thumb {
-    background: #453e78;
-    border-top: solid 2px #292547;
-    border-bottom: solid 2px #292547;
+    background: var(--main-dark-color);
+    border-top: solid 2px var(--main-very-dark-color);
+    border-bottom: solid 2px  var(--main-very-dark-color);
 }
 
 .followedUserDark {
@@ -184,7 +184,7 @@
 
 .followedUserDark h3 {
     font-family: 'Manrope', sans-serif;
-    color:#fff;
+    color: var(--white-color);
     text-transform: capitalize;
     font-weight: normal;
     font-size: 18px;
@@ -192,7 +192,7 @@
 
 .headerDark {
     width: 100%;
-    background-color: #211e3b;
+    background-color:  var(--main-very-dark-color);
     padding: 1rem;
     box-sizing: border-box;
     border-radius: 5px;
@@ -206,7 +206,7 @@
 .headerDark svg {
     width: 2rem;
     height: 2rem;
-    fill: #fff;
+    fill:  var(--white-color);
     margin-right: .5rem;
 }
 
@@ -216,7 +216,7 @@
     font-size: 20px;
     margin: 0;
     font-family: 'Manrope', sans-serif;
-    color:#fff;
+    color: var(--white-color);
 }
 
 .smallScreenDark {
@@ -226,6 +226,6 @@
 @media (max-width: 850px) {
     .smallScreenDark {
         display: block;
-        background-color: #252140;
+        background-color:  var(--main-very-dark-color);
     }
 }

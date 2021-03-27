@@ -8,12 +8,13 @@ export const authStart = () => {
     };
 };
 
-export const authSuccess = (token, userId) => {
+export const authSuccess = (token, userId, username) => {
 
     return {
         type: actionTypes.AUTH_SUCCESS,
         idToken: token,
-        userId: userId
+        userId: userId,
+        username: username
     };
 };
 
@@ -63,6 +64,7 @@ export const auth = (email, password, userName, isSignUp) => {
             password: password,
             returnSecureToken: true
         };
+        let signInUsername;
         let url = 'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyApulzF6CwA6d1GNYciuOz-OgrxfZNOp9o';
         if(!isSignUp) {
             url= 'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyApulzF6CwA6d1GNYciuOz-OgrxfZNOp9o';
@@ -75,23 +77,36 @@ export const auth = (email, password, userName, isSignUp) => {
                 userName: userName
             };
 
-            
-
-            if(isSignUp) {
+            if(!isSignUp) {
+                axios.get('https://socialmedia-2fd3c.firebaseio.com/users.json')
+                .then(res => {
+                    for(let key in res.data) {
+                       if(res.data[key].userId === response.data.localId ) {
+                        signInUsername = res.data[key].userName;
+                       };   
+                    };
+                    console.log({signInUsername});
+                    const exiprationDate = new Date( new Date().getTime() + response.data.expiresIn * 1000 );
+                    localStorage.setItem('token', response.data.idToken);
+                    localStorage.setItem('exiprationDate', exiprationDate);
+                    localStorage.setItem('userId', response.data.localId);
+                    dispatch(authSuccess(response.data.idToken, response.data.localId, signInUsername));
+                    dispatch(checkAuthTimeout(response.data.expiresIn));
+                    return
+                });
+            } else {
                 axios.post('https://socialmedia-2fd3c.firebaseio.com/users.json', userData)
                 .then(resp => {
                     
                 })
-            };
-        
-
-            
-            const exiprationDate = new Date( new Date().getTime() + response.data.expiresIn * 1000 );
-            localStorage.setItem('token', response.data.idToken);
-            localStorage.setItem('exiprationDate', exiprationDate);
-            localStorage.setItem('userId', response.data.localId);
-            dispatch(authSuccess(response.data.idToken, response.data.localId));
-            dispatch(checkAuthTimeout(response.data.expiresIn));
+                
+                const exiprationDate = new Date( new Date().getTime() + response.data.expiresIn * 1000 );
+                localStorage.setItem('token', response.data.idToken);
+                localStorage.setItem('exiprationDate', exiprationDate);
+                localStorage.setItem('userId', response.data.localId);
+                dispatch(authSuccess(response.data.idToken, response.data.localId, userName));
+                dispatch(checkAuthTimeout(response.data.expiresIn));
+            }
         })
         .catch(err => {
             
@@ -107,19 +122,38 @@ export const setAuthRedirectPath = (path) => {
     };
 };
 
+export const authLoader = (state) => {
+    return {
+        type: actionTypes.AUTH_LOADER,
+        loaderState: state
+    };
+};
+
 export const authCheckState = () => {
     return dispatch => {
+        dispatch(authLoader(true));
         const token = localStorage.getItem('token');
         if (!token) {
             dispatch(logout());
+            dispatch(authLoader(false));
         } else {
             const expirationDate = new Date(localStorage.getItem('exiprationDate'));
             if (expirationDate <= new Date()) {
                 dispatch(logout());
             } else {
                 const userId = localStorage.getItem('userId');
-                dispatch(authSuccess(token, userId));
                 checkAuthTimeout((expirationDate.getTime() - new Date().getTime()) / 1000);
+                axios.get('https://socialmedia-2fd3c.firebaseio.com/users.json')
+                .then(res => {
+                    let username;
+                    for(let key in res.data) {
+                       if(res.data[key].userId === userId ) {
+                            username = res.data[key].userName;
+                       };   
+                    };
+                    dispatch(authSuccess(token, userId, username));
+                    dispatch(authLoader(false));
+                })
             };
         };
     };

@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
 import {connect} from 'react-redux';
 
 import classes from './ChatUsers.module.css';
@@ -7,7 +7,6 @@ import axios from 'axios';
 import {Link} from 'react-router-dom';
 import Spinner from '../../../components/UI/Spinner/Spinner';
 import ChatPanel from '../ChatPanel/ChatPanel';
-import Aux from '../../../hoc/Aux';
 import { Route } from 'react-router-dom';
 import { BsPeopleFill } from 'react-icons/bs';
 
@@ -186,7 +185,7 @@ class ChatUsers extends Component {
 
     render() {
         return (
-            <Aux>
+            <Fragment>
                 <div className={this.props.userTheme === 1 ? classes.smallScreenDark : classes.smallScreen}>
                     {this.props.match.params.id ? <Route path='/chat/:id' exact component={ChatPanel}/> : null}
                 </div>
@@ -210,7 +209,7 @@ class ChatUsers extends Component {
                         {this.state.loading ? <Spinner/> : this.state.chatUsers}
                     </div>
                 </div> : null}
-            </Aux>
+            </Fragment>
         )
     }
 }

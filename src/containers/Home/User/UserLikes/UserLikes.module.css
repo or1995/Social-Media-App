@@ -7,7 +7,7 @@
 
 .header {
     width: 100%;
-    background-color: #9081FF;
+    background-color: var(--main-color);
     padding: 1rem;
     box-sizing: border-box;
     border-radius: 5px;
@@ -20,7 +20,7 @@
 .header svg {
     width: 1.5rem;
     height: 1.5rem;
-    fill: #FDFFFC;
+    fill: var(--very-light-color);
     margin-right: .8rem;
 }
 
@@ -30,5 +30,5 @@
     font-size: 20px;
     margin: 0;
     font-family: 'Manrope', sans-serif;
-    color:#FDFFFC;
+    color:var(--very-light-color);
 }

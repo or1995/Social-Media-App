@@ -1,9 +1,8 @@
-import React,{Component} from 'react';
+import React,{Component, Fragment} from 'react';
 
 import NavigationItems from '../NavigationItems/NavigationItems';
 import classes from './SideDrawer.module.css';
 import Backdrop from '../../UI/Backdrop/Backdrop';
-import Aux from '../../../hoc/Aux';
 import Logo from '../../../assets/Logo/Logo';
 import {connect} from 'react-redux';
 import {NavLink} from 'react-router-dom';
@@ -109,7 +108,7 @@ class SideDrawer extends Component {
 
     
     return (
-        <Aux>
+        <Fragment>
             <Backdrop show={this.props.open} clicked={this.props.closed} index='high'/>
             <div className={this.props.userTheme === 1 ? attachedClassesDark.join(' ') : attachedClasses.join(' ')} onClick={this.props.closed} >
                 <div className={this.props.userTheme === 1 ? classes.LogoDark : classes.Logo}>
@@ -178,7 +177,7 @@ class SideDrawer extends Component {
                 </div>
                 </nav>
             </div>
-        </Aux>
+        </Fragment>
     );
     }
 };

@@ -13,6 +13,7 @@ import Logout from './containers/Auth/Logout/Logout';
 import OtherUser from './containers/OtherUser/OtherUser';
 import Chat from './containers/Chat/Chat';
 import Notifications from './containers/MobileViewNotifications/MobileViewNotifications';
+import AuthLoader from './shared/LoadingAuth';
 
 class App extends Component {
 
@@ -25,6 +26,10 @@ class App extends Component {
                     <Route path="/auth" exact component={Auth} />
                     <Redirect to="/auth" exact/>
                   </Switch>)
+
+    if(this.props.authLoader) {
+      routes = (<Route path="/loading" exact component={AuthLoader} />)
+    }
 
     if(this.props.isAuthenticated) {
       routes = (<Switch>
@@ -60,7 +65,8 @@ class App extends Component {
 
 const mapStateToProps = state => {
   return {
-    isAuthenticated: state.auth.token !== null
+    isAuthenticated: state.auth.token !== null,
+    authLoader: state.auth.authLoader
   }
 }
 

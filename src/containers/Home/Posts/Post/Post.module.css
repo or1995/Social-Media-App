@@ -2,7 +2,7 @@
     width: 100%;
     max-width: 100%;
     min-height: 13rem;
-    background-color: #FDFFFC;
+    background-color: var(--very-light-color);
     box-sizing: border-box;
     padding-bottom: 0;
     display: flex;
@@ -29,7 +29,7 @@
     width: 80%;
     font-family: 'Manrope', sans-serif;
     font-weight: normal;
-    color:#5C5C5C;
+    color:var(--grey-color);
     width: 100%;
     cursor: pointer;
 }
@@ -68,7 +68,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background-color: #fafafa;
+    background-color: var(--user-area-color);
 }
 
 .profileImg {
@@ -83,7 +83,7 @@
 }
 
 .profileImg:hover {
-    border: solid 3px #9081FF;
+    border: solid 3px var(--main-color);
     transition: all .3s;
 }
 
@@ -96,13 +96,13 @@
 
 .user a {
     text-decoration: none;
-    color:#5C5C5C;
+    color:var(--grey-color);
     padding-left: 0.5rem;
     transition: all .3s;
 }
 
 .user a:hover {
-    color: #424242;
+    color: var(--grey-dark-color);
     text-decoration: underline;
     transition: all .3s;
 }
@@ -137,7 +137,7 @@
 .comments {
     border: none;
     background-color: transparent;
-    color: #5C5C5C;
+    color: var(--grey-color);
     font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
@@ -149,12 +149,12 @@
 }
 
 .comments:hover {
-    background-color: #F8FAF7;
+    background-color: var(--light-color);
     transition: all .3s;
 }
 
 .likes {
-    color: #5C5C5C;
+    color: var(--grey-color);
     font-family: 'Manrope', sans-serif;
     font-size: 1.2rem;
     margin: 0;
@@ -162,7 +162,7 @@
 }
 
 .likesUp {
-    color: #9081FF;
+    color: var(--main-color);
     font-family: 'Manrope', sans-serif;
     font-size: 1.2rem;
     margin: 0;
@@ -170,7 +170,7 @@
 }
 
 .likesDown {
-    color: #ff8181;
+    color: var(--secondary-color);
     font-family: 'Manrope', sans-serif;
     font-size: 1.2rem;
     margin: 0;
@@ -180,7 +180,7 @@
 .likeButton {
     border: none;
     background-color: transparent;
-    color: #5C5C5C;
+    color: var(--grey-color);
     font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
@@ -192,7 +192,7 @@
 
 .likeButton:disabled {
     background-color: transparent;
-    color: #5C5C5C;
+    color: var(--grey-color);
     cursor: pointer;
     font-family: 'Manrope', sans-serif;
     transition: all .3s;
@@ -201,7 +201,7 @@
 .unlikeButton {
     border: none;
     background-color: transparent;
-    color: #5C5C5C;
+    color: var(--grey-color);
     font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
@@ -212,30 +212,30 @@
 }
 
 .unlikeButton:disabled {
-    color: #5C5C5C;
+    color: var(--grey-color);
     cursor: pointer;
     font-family: 'Manrope', sans-serif;
     transition: all .3s;
 }
 
 .likeButton:hover {
-    color: #9081FF;
+    color: var(--main-color);
     transition: all .3s;
-    background-color: #F8FAF7;
+    background-color: var(--light-color);
     border-radius: 5px;
 }
 
 .unlikeButton:hover {
-    color: #ff8181;
+    color: var(--secondary-color);
     transition: all .3s;
-    background-color: #F8FAF7;
+    background-color: var(--light-color);
     border-radius: 5px;
 }
 
 .likeButtonClicked {
     border: none;
     background-color: transparent;
-    color: #9081FF;
+    color: var(--main-color);
     font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
@@ -246,7 +246,7 @@
 }
 
 .likeButtonClicked:disabled {
-    color: #9081FF;
+    color: var(--main-color);
     cursor: pointer;
     font-family: 'Manrope', sans-serif;
     transition: all .3s;
@@ -255,7 +255,7 @@
 .unlikeButtonClicked {
     border: none;
     background-color: transparent;
-    color: #ff8181;
+    color: var(--secondary-color);
     font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
@@ -266,20 +266,20 @@
 }
 
 .unlikeButtonClicked:disabled {
-    color: #ff8181;
+    color: var(--secondary-color);
     cursor: pointer;
     font-family: 'Manrope', sans-serif;
     transition: all .3s;
 }
 
 .likeButtonClicked:hover {
-    color: #9081FF;
+    color: var(--main-color);
     transition: all .3s;
     border-radius: 5px;
 }
 
 .unlikeButtonClicked:hover {
-    color: #ff8181;
+    color: var(--secondary-color);
     transition: all .3s;
     border-radius: 5px;
 }
@@ -292,7 +292,7 @@
     width: 100%;
     max-width: 100%;
     min-height: 13rem;
-    background-color: #292547;
+    background-color: var(--main-very-dark-color);
     box-sizing: border-box;
     padding-bottom: 0;
     display: flex;
@@ -317,7 +317,7 @@
     width: 80%;
     font-family: 'Manrope', sans-serif;
     font-weight: normal;
-    color:#FFF;
+    color:var(--white-color);
     width: 100%;
     cursor: pointer;
 }
@@ -334,7 +334,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background-color: #211e3b;
+    background-color: var(--main-very-dark-color);
 }
 
 .profileImgDark {
@@ -348,7 +348,7 @@
 }
 
 .profileImgDark:hover {
-    border: solid 3px #9081FF;
+    border: solid 3px var(--main-color);
     transition: all .3s;
 }
 
@@ -361,13 +361,13 @@
 
 .userDark a {
     text-decoration: none;
-    color:#fff;
+    color:var(--white-color);
     padding-left: 0.5rem;
     transition: all .3s;
 }
 
 .userDark a:hover {
-    color: #fff;
+    color: var(--white-color);
     text-decoration: underline;
     transition: all .3s;
 }
@@ -375,7 +375,7 @@
 .commentsDark {
     border: none;
     background-color: transparent;
-    color: #fff;
+    color: var(--white-color);
     font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
@@ -387,12 +387,12 @@
 }
 
 .commentsDark:hover {
-    background-color: #211e3b;
+    background-color: var(--main-very-dark-color);
     transition: all .3s;
 }
 
 .likesDark {
-    color: #fff;
+    color: var(--white-color);
     font-family: 'Manrope', sans-serif;
     font-size: 1.2rem;
     margin: 0;
@@ -400,7 +400,7 @@
 }
 
 .likesUpDark {
-    color: #9081FF;
+    color: var(--main-color);
     font-family: 'Manrope', sans-serif;
     font-size: 1.2rem;
     margin: 0;
@@ -408,7 +408,7 @@
 }
 
 .likesDownDark {
-    color: #ff8181;
+    color: var(--secondary-color);
     font-family: 'Manrope', sans-serif;
     font-size: 1.2rem;
     margin: 0;
@@ -418,7 +418,7 @@
 .likeButtonDark {
     border: none;
     background-color: transparent;
-    color: #fff;
+    color: var(--white-color);
     font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
@@ -430,7 +430,7 @@
 
 .likeButtonDark:disabled {
     background-color: transparent;
-    color: #fff;
+    color: var(--white-color);
     cursor: pointer;
     font-family: 'Manrope', sans-serif;
     transition: all .3s;
@@ -439,7 +439,7 @@
 .unlikeButtonDark {
     border: none;
     background-color: transparent;
-    color: #fff;
+    color: var(--white-color);
     font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
@@ -450,23 +450,23 @@
 }
 
 .unlikeButtonDark:disabled {
-    color: #fff;
+    color: var(--white-color);
     cursor: pointer;
     font-family: 'Manrope', sans-serif;
     transition: all .3s;
 }
 
 .likeButtonDark:hover {
-    color: #9081FF;
+    color: var(--main-color);
     transition: all .3s;
-    background-color: #211e3b;
+    background-color: var(--main-very-dark-color);
     border-radius: 5px;
 }
 
 .unlikeButtonDark:hover {
-    color: #ff8181;
+    color: var(--secondary-color);
     transition: all .3s;
-    background-color: #211e3b;
+    background-color: var(--main-very-dark-color);
     border-radius: 5px;
 }
 

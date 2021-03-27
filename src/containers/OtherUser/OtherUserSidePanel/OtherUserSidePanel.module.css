@@ -10,7 +10,7 @@
 .userArea {
     width: 100%;
     height: 12rem;
-    background-color: #9081FF;
+    background-color: var(--main-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,14 +21,14 @@
 }
 
 .userArea button {
-    background-color: #ff8181;
-    color: #fff;
-    border-color: #ff8181;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    border-color: var(--secondary-color);
 }
 
 .userArea button:hover {
-    background-color: #ff8f8f;
-    border-color: #ff8f8f;
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
 }
 
 .top {
@@ -48,7 +48,7 @@
     font-size: 18px;
     font-family: 'Manrope', sans-serif;
     font-weight: normal;
-    color:#fff;
+    color:var(--white-color);
     text-transform: capitalize;
     margin: 0;
     margin-top: .3rem;
@@ -84,7 +84,7 @@
 }
 
 .item:hover {
-    background-color: #F8FAF7;
+    background-color: var(--light-color);
     transition: all .3s;
 }
 
@@ -95,7 +95,7 @@
 .item h3 {
     text-decoration: none;
     font-size: 16px;
-    color:#606060;
+    color: var(--grey-color);
     font-family: 'Manrope', sans-serif;
     margin:0;
     font-weight: normal;
@@ -105,31 +105,31 @@
 .item svg {
     width: 1.9rem;
     height: 1.9rem;
-    fill: #949494;
+    fill: var(--grey-color);
     margin-right: 1rem;
 }
 
 .active {
     border-radius: 5px;
-    background-color: #F8FAF7;
+    background-color: var(--light-color);
 }
 
 .item:hover svg {
-    fill: #9081FF;
+    fill: var(--main-color);
     transition: all .3s;
 }
 
 .item:hover h3 {
-    color: #9081FF;
+    color: var(--main-color);
     transition: all .3s;
 }
 
 .active svg {
-    fill: #9081FF;
+    fill: var(--main-color);
 }
 
 .active h3 {
-    fill: #9081FF;
+    fill: var(--main-color);
 }
 
 .likes {
@@ -160,7 +160,7 @@
 
 
 .like {
-    color: #fff;
+    color: var(--white-color);
     margin: 0;
     margin-right: 1rem;
     font-weight: normal;
@@ -168,7 +168,7 @@
 }
 
 .friend {
-    color: #fff;
+    color: var(--white-color);
     margin: 0;
     font-weight: normal;
 }
@@ -364,7 +364,7 @@
 .userAreaDark {
     width: 100%;
     height: 12rem;
-    background-color: #9081FF;
+    background-color: var(--main-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -375,14 +375,14 @@
 }
 
 .userAreaDark button {
-    background-color: #ff8181;
-    color: #fff;
-    border-color: #ff8181;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    border-color: var(--secondary-color);
 }
 
 .userAreaDark button:hover {
-    background-color: #ff8f8f;
-    border-color: #ff8f8f;
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
 }
 
 .topDark {
@@ -402,7 +402,7 @@
     font-size: 18px;
     font-family: 'Manrope', sans-serif;
     font-weight: normal;
-    color:#fff;
+    color:var(--white-color);
     text-transform: capitalize;
     margin: 0;
     margin-top: .3rem;
@@ -438,7 +438,7 @@
 }
 
 .itemDark:hover {
-    background-color: #211e3b;
+    background-color: var(--main-very-dark-color);
     transition: all .3s;
 }
 
@@ -449,7 +449,7 @@
 .itemDark h3 {
     text-decoration: none;
     font-size: 16px;
-    color:#fff;
+    color:var(--white-color);
     font-family: 'Manrope', sans-serif;
     margin:0;
     font-weight: normal;
@@ -459,31 +459,31 @@
 .itemDark svg {
     width: 1.9rem;
     height: 1.9rem;
-    fill: #fff;
+    fill: var(--white-color);
     margin-right: 1rem;
 }
 
 .activeDark {
     border-radius: 5px;
-    background-color: #211e3b;
+    background-color: var(--main-very-dark-color);
 }
 
 .itemDark:hover svg {
-    fill: #9081FF;
+    fill: var(--main-color);
     transition: all .3s;
 }
 
 .itemDark:hover h3 {
-    color: #9081FF;
+    color: var(--main-color);
     transition: all .3s;
 }
 
 .activeDark svg {
-    fill: #9081FF;
+    fill: var(--main-color);
 }
 
 .activeDark h3 {
-    fill: #9081FF;
+    fill: var(--main-color);
 }
 
 .likesDark {
@@ -500,7 +500,7 @@
 }
 
 .likeDark {
-    color: #fff;
+    color: var(--white-color);
     margin: 0;
     margin-right: 1rem;
     font-weight: normal;
@@ -508,7 +508,7 @@
 }
 
 .friendDark {
-    color: #fff;
+    color: var(--white-color);
     margin: 0;
     font-weight: normal;
 }

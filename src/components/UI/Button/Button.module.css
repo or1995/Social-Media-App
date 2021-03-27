@@ -7,8 +7,8 @@
     margin: 10px;
     border-radius: 4px;
     text-align: center;
-    border: solid 2px #949494;
-    color: #949494;
+    border: solid 2px var(--grey-color);
+    color: var(--grey-color);
 }
 
 
@@ -39,16 +39,16 @@
 }
 
 .green:hover {
-    border: solid 2px #ff8181;
-    background-color: #ff8181;
-    color: #fff;
+    border: solid 2px var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: var(--white-color);
     transition: all .3s;
 }
 
 .pink:hover {
-    border: solid 2px #9081FF;
-    background-color: #9081FF;
-    color: #fff;
+    border: solid 2px var(--main-color);
+    background-color: var(--main-color);
+    color: var(--white-color);
     transition: all .3s;
 }
 
@@ -61,6 +61,6 @@
     margin: 10px;
     border-radius: 4px;
     text-align: center;
-    border: solid 2px #fff;
-    color: #fff;
+    border: solid 2px  var(--white-color);
+    color:  var(--white-color);
 }

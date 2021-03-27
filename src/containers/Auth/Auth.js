@@ -168,11 +168,11 @@ class Auth extends Component {
                         <div className={classes.inputs}>
                             {form}
                         </div> 
-                        <Button btnType="pink">SUBMIT</Button>
+                        <Button btnType="green">SUBMIT</Button>
                     </form>
                     <Button
                         clicked={this.switchAuthModeHandler} 
-                        btnType="green">{this.state.isSignup ? 'LOGIN HERE' : 'SIGNUP HERE'}</Button>
+                        btnType="pink">{this.state.isSignup ? 'LOGIN HERE' : 'SIGNUP HERE'}</Button>
                 </div>
                 <div className={classes.footer}>
                     <h3>This website is created by <a href="https://or1995.github.io" target="_blank" rel='noopener noreferrer'>OMAR ALI</a> &copy;2020. This background image is  <a href="http://www.freepik.com" target="_blank">Designed by Freepik</a></h3>

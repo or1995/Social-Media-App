@@ -1,10 +1,9 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
 import classes from './CreatePost.module.css';
 import Input from '../../../components/UI/Input/Input';
 import Button from '../../../components/UI/Button/Button';
 import uniqid from 'uniqid';
 import Spinner from '../../../components/UI/Spinner/Spinner';
-import Aux from '../../../hoc/auxiliary';
 import {connect} from 'react-redux';
 import axios from 'axios';
 import { CSSTransition } from 'react-transition-group';
@@ -115,7 +114,7 @@ class CreatePost extends Component {
             content = <Spinner/>;
         } else {
             content = (
-                <Aux>
+                <Fragment>
                     <Input elementType='textarea' value={this.state.content} elementConfig={{type: 'input', placeholder: 'Create a Post.'}} changed={(event) => this.setState({content: event.target.value})}/>
                     <CSSTransition in={this.state.clicked} timeout={200} classNames={"my-node"} unmountOnExit>
                         <div className={classes.buttonArea}>
@@ -129,7 +128,7 @@ class CreatePost extends Component {
                             </div>
                         </div>
                     </CSSTransition>
-                </Aux>
+                </Fragment>
             );
         }
         return (

@@ -19,7 +19,7 @@
     left: 2%;
     width: 19vw;
     height: 85vh;
-    background-color: #FDFFFC;
+    background-color: var(--very-light-color);
     position: fixed;
     border-radius: 5px;
     box-shadow: 0px 3px 5px -2px rgba(0,0,0,.2);
@@ -34,7 +34,7 @@
     right: 2%;
     width: 25vw;
     height: 85vh;
-    background-color: #FDFFFC;
+    background-color: var(--very-light-color);
     position: fixed;
     border-radius: 5px;
     box-shadow: 0px 3px 5px -2px rgba(0,0,0,.2);
@@ -46,7 +46,7 @@
     font-weight: 100;
     font-family: 'Manrope', sans-serif;
     font-weight: normal;
-    color: #9081FF;
+    color: var(--main-color);
     width: 100%;
     display: flex;
     align-items: center;
@@ -55,11 +55,11 @@
 
 .footer a {
     font-weight: bold;
-    color: #b484db;
+    color: var(--main-color);
 }
 
 .footer a:hover {
-    color: #d199ff;
+    color: var(--main-color);
     transition: all .3s;
 }
 
@@ -74,14 +74,14 @@
 .message h1 {
     margin: 0;
     font-size: 1.4rem;
-    color: #9081FF;
+    color: var(--main-color);
 }
 
 .message h3 {
     font-weight: normal;
     margin: 0;
     font-size: 1rem;
-    color: #5C5C5C;
+    color: var(--grey-color);
 }
 
 @media (max-width: 850px) {
@@ -134,7 +134,7 @@
     left: 2%;
     width: 19vw;
     height: 85vh;
-    background-color: #252140;
+    background-color: var(--main-very-dark-color);
     position: fixed;
     border-radius: 5px;
     box-shadow: 0px 3px 5px -2px rgba(0,0,0,.2);
@@ -149,7 +149,7 @@
     right: 2%;
     width: 25vw;
     height: 85vh;
-    background-color: #252140;
+    background-color: var(--main-very-dark-color);
     position: fixed;
     border-radius: 5px;
     box-shadow: 0px 3px 5px -2px rgba(0,0,0,.2);
@@ -161,7 +161,7 @@
     font-weight: 100;
     font-family: 'Manrope', sans-serif;
     font-weight: normal;
-    color: #fff;
+    color: var(--white-color);
     width: 100%;
     display: flex;
     align-items: center;
@@ -170,11 +170,11 @@
 
 .footerDark a {
     font-weight: bold;
-    color: #fff;
+    color: var(--white-color);
 }
 
 .footerDark a:hover {
-    color: #fff;
+    color: var(--white-color);
     transition: all .3s;
 }
 
@@ -189,14 +189,14 @@
 .messageDark h1 {
     margin: 0;
     font-size: 1.4rem;
-    color: #fff;
+    color: var(--white-color);
 }
 
 .messageDark h3 {
     font-weight: normal;
     margin: 0;
     font-size: 1rem;
-    color: #fff;
+    color: var(--white-color);
 }
 
 @media (max-width: 850px) {

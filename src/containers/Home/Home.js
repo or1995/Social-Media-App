@@ -3,7 +3,6 @@ import classes from './Home.module.css';
 import CreatePost from './CreatePost/CreatePost';
 import Posts from './Posts/Posts';
 import { Route, Switch, Redirect} from 'react-router-dom';
-import axios from 'axios';
 import FullPost from './FullPost/FullPost';
 import UserSidePanel from './User/UserSidePanel/UserSidePanel';
 
@@ -28,32 +27,13 @@ class Home extends Component {
     componentDidMount() {
         this.props.onGet();
         this.props.onGetComments();
-        setTimeout(() => {
-            if(this.props.userId !== null) {
-                axios.get('https://socialmedia-2fd3c.firebaseio.com/users.json')
-                .then(res => {
-                    let username;
-                    for(let key in res.data) {
-                       if(res.data[key].userId === this.props.userId ) {
-                            username = res.data[key].userName;
-                            this.props.getUser(username);
-                            this.props.getUserTheme(res.data[key].theme);
-                       };
-                    };
-                });
-            this.setState({disabledCreate:false});
-            } 
-        }, 2000);
     }
-
-    
-
 
     render () {
         if(this.props.userTheme === 1) {
-            document.body.style.backgroundColor = "#322d57";    
+            document.body.style.backgroundColor = "var(--main-dark-color)";    
         } else {
-            document.body.style.backgroundColor = "#f1f0f7"; 
+            document.body.style.backgroundColor = "var(--light-dark-color)"; 
         }
 
         let redirection = (<Redirect to="/auth"/>);
@@ -94,7 +74,6 @@ class Home extends Component {
                 </Switch>
             </div>);
         }
-       
         
         
         return (

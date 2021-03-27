@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #FDFFFC;
+    background-color: var(--very-light-color);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     box-shadow: 0px 3px 5px -2px rgba(0,0,0,.2);
@@ -49,7 +49,7 @@
     box-sizing: border-box;
     line-height: 1.5;
     font-weight: normal;
-    color:#5C5C5C;
+    color: var(--grey-color);
     text-align: left;
     min-width: 90%;
     padding-bottom: 1rem;
@@ -96,12 +96,12 @@
 
 .userName a {
     text-decoration: none;
-    color:#5C5C5C;
+    color: var(--grey-color);
     padding-left: 0.5rem;
 }
 
 .userName a:hover {
-    color: #424242;
+    color: var(--grey-dark-color);
     transition: all .3s;
     text-decoration: underline;
 }
@@ -154,7 +154,7 @@
 }
 
 .likes {
-    color: #5C5C5C;
+    color: var(--grey-color);
     font-family: 'Manrope', sans-serif;
     font-size: 1.2rem;
     margin: 0;
@@ -162,7 +162,7 @@
 }
 
 .likesUp {
-    color: #9081FF;
+    color: var(--mains-color);
     font-family: 'Manrope', sans-serif;
     font-size: 1.2rem;
     margin: 0;
@@ -170,7 +170,7 @@
 }
 
 .likesDown {
-    color: #ff8181;
+    color: var(--secondary-color);
     font-family: 'Manrope', sans-serif;
     font-size: 1.2rem;
     margin: 0;
@@ -180,7 +180,7 @@
 .likeButton {
     border: none;
     background-color: transparent;
-    color: #5C5C5C;
+    color: var(--grey-color);
     font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
@@ -203,7 +203,7 @@
 .unlikeButton {
     border: none;
     background-color: transparent;
-    color: #5C5C5C;
+    color: var(--grey-color);
     font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
@@ -223,17 +223,17 @@
 }
 
 .likeButton:hover {
-    color: #9081FF;
+    color: var(--main-color);
     transition: all .3s;
-    background-color: #F8FAF7;
+    background-color: var(--light-color);
     border-radius: 5px;
     outline: none;
 }
 
 .unlikeButton:hover {
-    color: #ff8181;
+    color: var(--secondary-color);
     transition: all .3s;
-    background-color: #F8FAF7;
+    background-color: var(--light-color);
     border-radius: 5px;
     outline: none;
 }
@@ -241,7 +241,7 @@
 .likeButtonClicked {
     border: none;
     background-color: transparent;
-    color: #9081FF;
+    color:  var(--main-color);
     font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
@@ -263,7 +263,7 @@
 .unlikeButtonClicked {
     border: none;
     background-color: transparent;
-    color: #ff8181;
+    color:  var(--secondary-color);
     font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
@@ -283,13 +283,13 @@
 }
 
 .likeButtonClicked:hover {
-    color: #9081FF;
+    color:  var(--main-color);
     transition: all .3s;
     border-radius: 5px;
 }
 
 .unlikeButtonClicked:hover {
-    color: #ff8181;
+    color:  var(--secondary-color);
     transition: all .3s;
     border-radius: 5px;
     outline: none;
@@ -304,7 +304,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #292547;
+    background-color:  var(--main-very-dark-color);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     box-shadow: 0px 3px 5px -2px rgba(0,0,0,.2);
@@ -330,7 +330,7 @@
     box-sizing: border-box;
     line-height: 1.5;
     font-weight: normal;
-    color:#fff;
+    color: var(--white-color);
     text-align: left;
     min-width: 90%;
     padding-bottom: 1rem;
@@ -378,12 +378,12 @@
 
 .userNameDark a {
     text-decoration: none;
-    color:#fff;
+    color: var(--white-color);
     padding-left: 0.5rem;
 }
 
 .userNameDark a:hover {
-    color: #FFF;
+    color: var(--white-color);
     transition: all .3s;
     text-decoration: underline;
 }
@@ -435,7 +435,7 @@
 }
 
 .likesDark {
-    color: #fff;
+    color: var(--white-color);
     font-family: 'Manrope', sans-serif;
     font-size: 1.2rem;
     margin: 0;
@@ -443,7 +443,7 @@
 }
 
 .likesUpDark {
-    color: #9081FF;
+    color: var(--main-color);
     font-family: 'Manrope', sans-serif;
     font-size: 1.2rem;
     margin: 0;
@@ -451,7 +451,7 @@
 }
 
 .likesDownDark {
-    color: #ff8181;
+    color: var(--secondary-color);
     font-family: 'Manrope', sans-serif;
     font-size: 1.2rem;
     margin: 0;
@@ -461,7 +461,7 @@
 .likeButtonDark {
     border: none;
     background-color: transparent;
-    color: #fff;
+    color: var(--white-color);
     font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
@@ -474,7 +474,7 @@
 
 .likeButtonDark:disabled {
     background-color: transparent;
-    color: #fff;
+    color: var(--white-color);
     cursor: pointer;
     font-family: 'Manrope', sans-serif;
     transition: all .3s;
@@ -484,7 +484,7 @@
 .unlikeButtonDark {
     border: none;
     background-color: transparent;
-    color: #fff;
+    color: var(--white-color);
     font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
@@ -496,7 +496,7 @@
 }
 
 .unlikeButtonDark:disabled {
-    color: #fff;
+    color: var(--white-color);
     cursor: pointer;
     font-family: 'Manrope', sans-serif;
     transition: all .3s;
@@ -504,17 +504,17 @@
 }
 
 .likeButtonDark:hover {
-    color: #9081FF;
+    color: var(--main-color);
     transition: all .3s;
-    background-color: #211e3b;
+    background-color: var(--main-very-dark-color);
     border-radius: 5px;
     outline: none;
 }
 
 .unlikeButtonDark:hover {
-    color: #ff8181;
+    color: var(--secondary-color);
     transition: all .3s;
-    background-color: #211e3b;
+    background-color: var(--main-very-dark-color);
     border-radius: 5px;
     outline: none;
 }

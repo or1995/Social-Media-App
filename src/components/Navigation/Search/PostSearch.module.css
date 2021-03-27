@@ -26,9 +26,9 @@
   
 /* Handle */
 .search::-webkit-scrollbar-thumb {
-    background: #9081FF;
-    border-top: solid 2px #fff;
-    border-bottom: solid 2px #fff;
+    background: var(--main-color);
+    border-top: solid 2px var(--white-color);
+    border-bottom: solid 2px var(--white-color);
 }
 
 .searchRes {
@@ -60,19 +60,19 @@
 
 .postLink {
     width: 100%;
-    color:#5C5C5C;
+    color:var(--grey-color);
     transition: all .3s;
 }
 
 .postLink:hover {
     border-radius: 5px;
-    background-color: #EDECEB;
+    background-color: var(--light-color);
     transition: all .3s;
 }
 
 .postLink a {
     width: 100%;
-    color:#5C5C5C;
+    color:var(--grey-color);
 }
 
 .noRes {
@@ -130,9 +130,9 @@
   
 /* Handle */
 .searchDark::-webkit-scrollbar-thumb {
-    background: #453e78;
-    border-top: solid 2px #292547;
-    border-bottom: solid 2px #292547;
+    background: var(--main-dark-color);
+    border-top: solid 2px var(--main-very-dark-color);
+    border-bottom: solid 2px var(--main-very-dark-color);
 }
 
 .searchResDark {
@@ -164,19 +164,19 @@
 
 .postLinkDark {
     width: 100%;
-    color:#fff;
+    color:var(--white-color);
     transition: all .3s;
 }
 
 .postLinkDark:hover {
     border-radius: 5px;
-    background-color: #211e3b;
+    background-color: var(--main-very-dark-color);
     transition: all .3s;
 }
 
 .postLinkDark a {
     width: 100%;
-    color:#fff;
+    color:var(--white-color);
 }
 
 .noResDark {
