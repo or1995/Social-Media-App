@@ -239,9 +239,9 @@ class Post extends Component {
                             this.props.likeUpdate(this.props.dbKey, data);
                             this.props.likeDatabaseDelete(this.state.currentLike.dataBaseId);
                             if(this.props.userTheme === 1) {
-                                this.setState({disLikeClass: classes.unlikeButtonDark, likeClass: classes.likeButtonDark, likesUpdater: this.state.likesUpdater + 2});
+                                this.setState({disLikeClass: classes.unlikeButtonDark, likeClass: classes.likeButtonDark, likesUpdater: this.state.likesUpdater + 1});
                             } else {
-                                this.setState({disLikeClass: classes.unlikeButton, likeClass: classes.likeButton, likesUpdater: this.state.likesUpdater + 2});
+                                this.setState({disLikeClass: classes.unlikeButton, likeClass: classes.likeButton, likesUpdater: this.state.likesUpdater + 1});
                             }
                         })
                     }

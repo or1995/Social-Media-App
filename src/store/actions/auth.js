@@ -8,13 +8,14 @@ export const authStart = () => {
     };
 };
 
-export const authSuccess = (token, userId, username) => {
+export const authSuccess = (token, userId, username, usertheme) => {
 
     return {
         type: actionTypes.AUTH_SUCCESS,
         idToken: token,
         userId: userId,
-        username: username
+        username: username,
+        usertheme: usertheme
     };
 };
 
@@ -65,6 +66,7 @@ export const auth = (email, password, userName, isSignUp) => {
             returnSecureToken: true
         };
         let signInUsername;
+        let signInUsertheme;
         let url = 'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyApulzF6CwA6d1GNYciuOz-OgrxfZNOp9o';
         if(!isSignUp) {
             url= 'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyApulzF6CwA6d1GNYciuOz-OgrxfZNOp9o';
@@ -83,6 +85,7 @@ export const auth = (email, password, userName, isSignUp) => {
                     for(let key in res.data) {
                        if(res.data[key].userId === response.data.localId ) {
                         signInUsername = res.data[key].userName;
+                        signInUsertheme = res.data[key].theme;
                        };   
                     };
                     console.log({signInUsername});
@@ -90,7 +93,7 @@ export const auth = (email, password, userName, isSignUp) => {
                     localStorage.setItem('token', response.data.idToken);
                     localStorage.setItem('exiprationDate', exiprationDate);
                     localStorage.setItem('userId', response.data.localId);
-                    dispatch(authSuccess(response.data.idToken, response.data.localId, signInUsername));
+                    dispatch(authSuccess(response.data.idToken, response.data.localId, signInUsername, signInUsertheme));
                     dispatch(checkAuthTimeout(response.data.expiresIn));
                     return
                 });
@@ -104,7 +107,7 @@ export const auth = (email, password, userName, isSignUp) => {
                 localStorage.setItem('token', response.data.idToken);
                 localStorage.setItem('exiprationDate', exiprationDate);
                 localStorage.setItem('userId', response.data.localId);
-                dispatch(authSuccess(response.data.idToken, response.data.localId, userName));
+                dispatch(authSuccess(response.data.idToken, response.data.localId, userName, null));
                 dispatch(checkAuthTimeout(response.data.expiresIn));
             }
         })
@@ -146,12 +149,14 @@ export const authCheckState = () => {
                 axios.get('https://socialmedia-2fd3c.firebaseio.com/users.json')
                 .then(res => {
                     let username;
+                    let theme;
                     for(let key in res.data) {
                        if(res.data[key].userId === userId ) {
                             username = res.data[key].userName;
+                            theme = res.data[key].theme;
                        };   
                     };
-                    dispatch(authSuccess(token, userId, username));
+                    dispatch(authSuccess(token, userId, username, theme));
                     dispatch(authLoader(false));
                 })
             };

@@ -11,9 +11,9 @@ class Chat extends Component {
 
     render() {
         if(this.props.userTheme === 1) {
-            document.body.style.backgroundColor = "#322d57";    
+            document.body.style.backgroundColor = "var(--main-dark-color)";    
         } else {
-            document.body.style.backgroundColor = "#f1f0f7"; 
+            document.body.style.backgroundColor = "var(--light-dark-color)"; 
         }
         return (
             <div className={this.props.userTheme ? classes.homeDark : classes.home}>

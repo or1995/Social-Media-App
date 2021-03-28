@@ -118,11 +118,11 @@
     width: 100%;
     box-sizing: border-box;
     padding-left: .5rem;
-    background-color: var(--main-dark-color);
+    background-color: var(--main-very-dark-color);
 }
 
 .userLinkDark:hover .followedUserDark {
-    background-color: var(--main-very-dark-color);
+    background-color: var(--main-dark-color);
     transition: all .3s;
 }
 

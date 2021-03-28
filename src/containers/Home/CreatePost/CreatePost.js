@@ -119,8 +119,8 @@ class CreatePost extends Component {
                     <CSSTransition in={this.state.clicked} timeout={200} classNames={"my-node"} unmountOnExit>
                         <div className={classes.buttonArea}>
                             <div className={classes.posting}>
-                                <Button key="1" btnType='pink' clicked={this.postToDataBase} disabled={this.props.disableCreate}>Post</Button>
-                                <Button key="2" btnType='green' clicked={this.removeButtons} disabled={this.props.disableCreate}>Cancel</Button>
+                                <Button key="1" btnType='pink' clicked={this.postToDataBase}>Post</Button>
+                                <Button key="2" btnType='green' clicked={this.removeButtons}>Cancel</Button>
                             </div>
                             <div className={classes.url}>
                                 <div className={this.props.userTheme === 1 ? classes.urlPicButtonDark : classes.urlPicButton} key="4" onClick={this.addPicture}><BsAspectRatio title="Add Picture URL"/></div>

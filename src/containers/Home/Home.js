@@ -16,9 +16,6 @@ import Notifications from './Notifications/Notifications';
 
 
 class Home extends Component {
-    state = {
-        disabledCreate: true
-    }
 
     UNSAFE_componentWillMount() {
         window.scrollTo(0, 0);
@@ -59,7 +56,7 @@ class Home extends Component {
         }
 
         let routeOrPosts = (<div className={classes.middle}>
-            <CreatePost userName={this.props.userName} disableCreate={this.state.disabledCreate}/>
+            <CreatePost userName={this.props.userName}/>
             {content}
         </div>);
 

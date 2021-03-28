@@ -237,7 +237,7 @@
 }
 
 .CreatePostDark textarea:hover {
-  background-color: #322d57;
+  background-color: var(--main-dark-color);
   transition: all .3s;
 }
 
