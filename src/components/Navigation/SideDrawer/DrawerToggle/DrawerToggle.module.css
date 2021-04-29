@@ -14,14 +14,14 @@
 .blue {
     width: 80%;
     height: 4px;
-    background-color: #9081FF;
+    background-color: var(--main-color);
     border-radius: 2px;
 }
 
 .red {
     width: 80%;
     height: 4px;
-    background-color: #9081FF;
+    background-color: var(--main-color);
     border-radius: 2px;
 }
 

@@ -89,7 +89,7 @@
 .header svg {
     width: 2rem;
     height: 2rem;
-    fill: var(--vary-light-color);
+    fill: var(--very-light-color);
     margin-right: .5rem;
 }
 
@@ -99,7 +99,7 @@
     font-size: 20px;
     margin: 0;
     font-family: 'Manrope', sans-serif;
-    color:var(--vary-light-color);
+    color:var(--very-light-color);
 }
 
 .smallScreen {
@@ -192,7 +192,7 @@
 
 .headerDark {
     width: 100%;
-    background-color:  var(--main-very-dark-color);
+    background-color:  var(--main-color);
     padding: 1rem;
     box-sizing: border-box;
     border-radius: 5px;
