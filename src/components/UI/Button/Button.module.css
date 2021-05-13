@@ -30,7 +30,7 @@
 
 .pink {
     
-    background-color: transparent;
+    background-color: var(--main-color);
     font-weight: bold;
     font-size: 1rem;
     border-radius: 5px;

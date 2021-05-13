@@ -175,7 +175,7 @@ class Auth extends Component {
                         btnType="pink">{this.state.isSignup ? 'LOGIN HERE' : 'SIGNUP HERE'}</Button>
                 </div>
                 <div className={classes.footer}>
-                    <h3>This website is created by <a href="https://or1995.github.io" target="_blank" rel='noopener noreferrer'>OMAR ALI</a> &copy;2020. This background image is  <a href="http://www.freepik.com" target="_blank">Designed by Freepik</a></h3>
+                    <h3>This website is created by <a href="omaralidev.com" target="_blank" rel='noopener noreferrer'>OMAR ALI</a> &copy;2020. This background image is  <a href="http://www.freepik.com" target="_blank">Designed by Freepik</a></h3>
                 </div>
             </div>
         );

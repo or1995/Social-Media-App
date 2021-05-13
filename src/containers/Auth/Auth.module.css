@@ -97,7 +97,7 @@
 }
 
 .Auth button:hover {
-    background-color: var(--main-color-color);
+    background-color: var(--main-color);
     border: none;
 }
 

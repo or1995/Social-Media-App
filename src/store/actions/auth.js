@@ -134,6 +134,7 @@ export const authLoader = (state) => {
 
 export const authCheckState = () => {
     return dispatch => {
+        console.log('auth check!');
         dispatch(authLoader(true));
         const token = localStorage.getItem('token');
         if (!token) {

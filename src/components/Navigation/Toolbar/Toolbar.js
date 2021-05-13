@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import classes from './Toolbar.module.css';
 import NavigationItems from '../NavigationItems/NavigationItems';
 import DrawerToggle from '../SideDrawer/DrawerToggle/DrawerToggle';
@@ -7,17 +6,24 @@ import Logo from '../../../assets/Logo/Logo';
 import SearchBar from '../Search/SearchBar/SearchBar';
 import {connect} from 'react-redux';
 import classnames from "classnames";
-import { render } from '@testing-library/react';
+import { Fragment } from 'react';
 
 class Toolbar extends Component {
     state= {
         prevScrollpos: window.pageYOffset,
-        visible: true
+        visible: true,
+        showToolBar: this.props.isAuthenticated,
     }
 
     componentDidMount() {
         window.addEventListener("scroll", this.handleScroll);
       }
+
+    componentDidUpdate(prevProps,prevState) {
+        if(prevProps.isAuthenticated !== this.props.isAuthenticated) {
+            this.setState({showToolBar: this.props.isAuthenticated});
+        }
+    }
 
 
     
@@ -39,7 +45,8 @@ class Toolbar extends Component {
 
     render() {
         return (
-            <header className={this.props.userTheme === 1 ? classnames(classes.ToolbarDark, {'ToolbarHidden' : !this.state.visible}) : classnames(classes.Toolbar, {'ToolbarHidden' : !this.state.visible})}>
+            <Fragment>
+            {this.state.showToolBar ? <header className={this.props.userTheme === 1 ? classnames(classes.ToolbarDark, {'ToolbarHidden' : !this.state.visible}) : classnames(classes.Toolbar, {'ToolbarHidden' : !this.state.visible})}>
                 <div className={classes.mainContent}>
                     {this.props.isAuth ? <DrawerToggle clicked={this.props.drawerToggleClicked}/> : null}
                     <div className={classes.Logo}>
@@ -50,13 +57,15 @@ class Toolbar extends Component {
                     </nav>
                 </div>
                 {this.props.isAuth ? <SearchBar /> : null}
-            </header>
+            </header> : null}
+            </Fragment>
         )
     }};
 
 const mapStateToProps = state => {
     return {
-        userTheme: state.auth.userTheme
+        isAuthenticated: state.auth.token !== null,
+        userTheme: state.auth.userTheme,
     }
 }
 
